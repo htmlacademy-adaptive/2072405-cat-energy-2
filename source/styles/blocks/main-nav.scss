@@ -1,3 +1,12 @@
-.main-nav {
-  background-color: rgb(196, 155, 155);
+.main-nav__list {
+  list-style-type: none;
+}
+
+.main-nav__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
 }

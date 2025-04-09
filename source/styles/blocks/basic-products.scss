@@ -1,3 +1,37 @@
-.basic-products {
-  background-color: rgb(196, 155, 155);
+.cards__link-text {
+  text-decoration: none;
+}
+
+.cards__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba(34, 34, 34, 1);
+}
+
+.cards__option,
+.cards__item--more-text {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(68, 68, 68, 1);
+}
+
+.cards__button {
+  display: block;
+  width: 280px;
+  height: 40px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  background-color: rgba(104, 183, 56, 1);
+}
+
+.cards__button--more {
+  color: rgba(68, 68, 68, 1);
+  background-color: rgba(242, 242, 242, 1);
 }

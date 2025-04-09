@@ -1,3 +1,27 @@
-.programs {
-  background-color: rgb(196, 155, 155);
+.programs__item {
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.programs__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
+}
+
+.programs__description {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 1);
+}
+
+.programs__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
 }

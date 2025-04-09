@@ -1,3 +1,36 @@
-.subscribe {
+.subscribe__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.subscribe__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.subscribe__input {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: rgba(68, 68, 68, 1);
+}
+
+.subscribe__button {
+  display: block;
+  width: 280px;
+  height: 40px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  background-color: rgba(104, 183, 56, 1);
+  border: none;
   background-color: rgb(168, 136, 136);
 }

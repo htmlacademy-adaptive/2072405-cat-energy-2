@@ -1,3 +1,20 @@
 .contacts {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.contacts-lead {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 1);
+}
+
+.contacts__adress {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(68, 68, 68, 1);
   background-color: rgb(196, 155, 155);
 }
