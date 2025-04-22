@@ -16,3 +16,36 @@
   color: rgba(68, 68, 68, 1);
   background-color: rgb(196, 155, 155);
 }
+
+
+.guide__item--leaf--background {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(104, 183, 56, 1);
+  background-image: url("../../icons/leaf-icon.svg");
+}
+
+.guide__item--water--background {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(104, 183, 56, 1);
+  background-image: url("../../icons/water-icon.svg");
+}
+
+.guide__item--meal--background {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(104, 183, 56, 1);
+  background-image: url("../../icons/eat-icon.svg");
+}
+
+.guide__item--clock--background {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(104, 183, 56, 1);
+  background-image: url("../../icons/weight-icon.svg");
+}

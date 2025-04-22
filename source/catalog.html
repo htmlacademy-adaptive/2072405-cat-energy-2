@@ -11,9 +11,17 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="/">
-      <img class="main-header__logo main-header__logo--text" src="#" width="101" height="18" alt="">
+    <a class="main-header__logo" href="#">
+      <picture>
+        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml">
+        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml">
+        <img class="main-header__logo main-header__logo--text" src="images/logo-icon.svg" width="33" height="38" alt="Логотип Cat Energy.">
+      </picture>
       <span class="visually-hidden">Логотип магазина Кэт Энерджи</span>
+      <picture>
+        <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml">
+        <img class="main-header__logo main-header__logo--text" src="images/header-logo-icon.svg" width="101" height="18" alt="Cat Energy">
+      </picture>
     </a>
     <nav class="main-nav main-nav--nojs">
       <button class="main-nav__toogle main-nav__toogle--close" type="button">
@@ -205,7 +213,7 @@
           </li>
           <li class="cards__item cards__item--more">
             <a class="cards__link-img" href="#" aria-label="Все товары">
-              <img class="cards__image" src="#" width="30" height="30" alt="">
+              <span class="cards__image cards__image--more" src="#" width="30" height="30" alt=""></span>
             </a>
             <a class="cards__link-text" href="#">
               <h3 class="cards__title">Показать еще 100500 товаров</h3>
@@ -247,6 +255,7 @@
       </ul>
       <div class="extra-product__gift">
         <h3 class="visually-hidden">Специальное предложение!</h3>
+        <span class="extra-product__gift--image"></span>
         <p class="extra-products__gift-description">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
@@ -283,7 +292,10 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo-link" href="#">
-        <img class="main-footer__logo" src="#" width="128" height="24" alt="Логотип">
+        <picture>
+          <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml">
+          <img class="main-header__logo main-header__logo--text" src="images/header-logo-icon.svg" width="101" height="18" alt="Cat Energy">
+        </picture>
       </a>
       <ul class="main-footer__social social">
         <li class="social__item">
@@ -305,7 +317,7 @@
       <div class="author">
         <a class="author__link author__link--text" href="#">HTML Academy</a>
         <a class="author__link author__link--img" href="#">
-          <img class="logo" src="#" width="27" height="34" alt="HTML Академия">
+          <img class="logo" src="images/footer-logo.svg" width="27" height="34" alt="HTML Академия">
         </a>
       </div>
     </div>

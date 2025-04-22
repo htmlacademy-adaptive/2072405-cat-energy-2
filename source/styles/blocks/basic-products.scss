@@ -35,3 +35,10 @@
   color: rgba(68, 68, 68, 1);
   background-color: rgba(242, 242, 242, 1);
 }
+
+.cards__image--more {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../icons/plus-icon.svg");
+}
