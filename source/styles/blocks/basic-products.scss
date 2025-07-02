@@ -1,3 +1,31 @@
+.basic-products__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    flex-flow: wrap;
+    flex-direction: row;
+    gap: 60px 30px;
+  }
+
+  @media (min-width: 1440px) {
+    gap: 80px 40px;
+  }
+}
+
+.cards__item {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: calc(50% - 15px);
+  }
+
+  @media (min-width: 1440px) {
+    width: calc(33% - 27px);
+  }
+}
+
 .cards__link-text {
   text-decoration: none;
 }
@@ -7,7 +35,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: rgba(34, 34, 34, 1);
+  color: #222222;
 }
 
 .cards__option,
@@ -15,7 +43,7 @@
   font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 16px;
-  color: rgba(68, 68, 68, 1);
+  color: #444444;
 }
 
 .cards__button {
@@ -26,14 +54,15 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   text-decoration: none;
-  background-color: rgba(104, 183, 56, 1);
+  background-color: #68b738;
+  margin: 0 auto;
 }
 
 .cards__button--more {
-  color: rgba(68, 68, 68, 1);
-  background-color: rgba(242, 242, 242, 1);
+  color: #444444;
+  background-color: #f2f2f2;
 }
 
 .cards__image--more {
@@ -41,4 +70,7 @@
   width: 30px;
   height: 30px;
   background-image: url("../../icons/plus-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto 10px;
 }

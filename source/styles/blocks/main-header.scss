@@ -1,3 +1,19 @@
 .main-header {
-  background-color: rgb(196, 155, 155);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+
+  @media (min-width: 768px) {
+    padding: 24px 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 30px 110px;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  align-items: center;
 }

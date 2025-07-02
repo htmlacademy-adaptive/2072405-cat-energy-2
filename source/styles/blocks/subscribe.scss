@@ -2,14 +2,27 @@
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .subscribe__text {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
+}
+
+.subscribe__input--container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
 }
 
 .subscribe__input {
@@ -17,19 +30,27 @@
   font-size: 20px;
   line-height: 100%;
   text-transform: uppercase;
-  color: rgba(68, 68, 68, 1);
+  color: #444444;
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .subscribe__button {
   display: block;
-  width: 280px;
-  height: 40px;
+  width: 100%;
+  max-width: 280px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   text-decoration: none;
-  background-color: rgba(104, 183, 56, 1);
+  background-color: #68b738;
   border: none;
+
+  @media (min-width: 768px) {
+    width: auto;
+    max-width: none;
+    min-width: 180px;
+  }
 }

@@ -1,51 +1,63 @@
-.guide__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  line-height: 40px;
-  color: rgba(0, 0, 0, 1);
+.guide__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 80px;
+    justify-content: space-between;
+  }
 }
 
-.guide__list {
-  list-style-type: none;
+.guide__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 140px;
+  max-width: 240px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    align-items: center;
+    min-width: 170px;
+    max-width: 250px;
+  }
 }
 
 .guide__description {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: rgba(68, 68, 68, 1);
-  background-color: rgb(196, 155, 155);
+  color: #444444;
+  margin: 10px 0;
 }
 
-
-.guide__item--leaf--background {
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-color: rgba(104, 183, 56, 1);
-  background-image: url("../../icons/leaf-icon.svg");
-}
-
-.guide__item--water--background {
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-color: rgba(104, 183, 56, 1);
-  background-image: url("../../icons/water-icon.svg");
-}
-
-.guide__item--meal--background {
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-color: rgba(104, 183, 56, 1);
-  background-image: url("../../icons/eat-icon.svg");
-}
-
+.guide__item--leaf--background,
+.guide__item--water--background,
+.guide__item--meal--background,
 .guide__item--clock--background {
   display: block;
   width: 60px;
   height: 60px;
-  background-color: rgba(104, 183, 56, 1);
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.guide__item--leaf--background {
+  background-image: url("../../icons/leaf-icon.svg");
+}
+
+.guide__item--water--background {
+  background-image: url("../../icons/water-icon.svg");
+}
+
+.guide__item--meal--background {
+  background-image: url("../../icons/eat-icon.svg");
+}
+
+.guide__item--clock--background {
   background-image: url("../../icons/weight-icon.svg");
 }

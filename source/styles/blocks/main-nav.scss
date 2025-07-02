@@ -1,5 +1,14 @@
 .main-nav__list {
   list-style-type: none;
+  display: none;
+  flex-direction: column;
+  gap: 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+  }
 }
 
 .main-nav__link {
@@ -15,4 +24,12 @@
   width: 24px;
   height: 16px;
   background-image: url("../../icons/open-menu-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
