@@ -1,4 +1,10 @@
+.basic-products {
+  margin: 0 20px;
+}
+
 .basic-products__list {
+  list-style-type: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -16,6 +22,10 @@
 
 .cards__item {
   width: 100%;
+  display: flex;
+  padding: 20px 0 17px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 
   @media (min-width: 768px) {
     width: calc(50% - 15px);
@@ -26,11 +36,17 @@
   }
 }
 
+.cards_text {
+  display: flex;
+  flex-direction: column;
+}
+
 .cards__link-text {
   text-decoration: none;
 }
 
 .cards__title {
+  margin: 0 0 14px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -46,10 +62,32 @@
   color: #444444;
 }
 
+.cards__description {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__option {
+  margin: 0;
+  padding: 0;
+}
+
+.cards__description dt {
+  grid-column: 1;
+  text-align: left;
+}
+
+.cards__description dd {
+  grid-column: 2;
+  text-align: right;
+  margin: 0;
+}
+
 .cards__button {
   display: block;
-  width: 280px;
-  height: 40px;
+  padding: 10px 109px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -63,6 +101,7 @@
 .cards__button--more {
   color: #444444;
   background-color: #f2f2f2;
+  padding: 10px 95px 10px 94px;
 }
 
 .cards__image--more {
@@ -73,4 +112,13 @@
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0 auto 10px;
+}
+
+.cards__link-img {
+  margin: 10.5px 36px;
+}
+
+.cards__item--more {
+  flex-direction: column;
+  align-items: center;
 }

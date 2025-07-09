@@ -1,6 +1,15 @@
 .contacts {
   display: flex;
   flex-direction: column;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 26px 20px;
   gap: 20px;
   background-color: #ffffff;
 }
@@ -14,6 +23,7 @@
 }
 
 .contacts__address {
+  display: block;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -28,10 +38,6 @@
     align-items: flex-start;
   }
 
-  .contacts__wrapper {
-    flex: 1 1 0;
-  }
-
   .contacts__map-wrapper {
     flex: 2 1 0;
   }
@@ -41,7 +47,7 @@
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
-  height: 0;
+  height: 362px;
   overflow: hidden;
   border-radius: 8px;
 

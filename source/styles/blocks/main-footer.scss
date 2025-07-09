@@ -1,3 +1,8 @@
+.main-footer {
+  background-color: #f2f2f2;
+  padding: 0 20px;
+}
+
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -12,6 +17,15 @@
     gap: 0;
     padding: 40px 0;
   }
+}
+
+.main-footer__social {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 74px;
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .author__link--text {
@@ -42,4 +56,17 @@
 
 .social__link--telegram {
   background-image: url("../../icons/tg-icon.svg");
+}
+
+.main-footer__logo-link {
+  display: block;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 40px 96px 20px;
+}
+
+.author {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 40px;
 }

@@ -1,3 +1,8 @@
+.example {
+  background-color: #eaeaea;
+  padding: 0 20px;
+}
+
 .example__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
@@ -12,21 +17,61 @@
   color: rgba(68, 68, 68, 1);
 }
 
+.example__list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.example__description {
+  position: relative;
+  width: 124px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+}
+
+.example__description::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 59px;
+  height: 2px;
+  background: #eaeaea;
+  transform: translateX(-50%);
+}
+
 .example__value {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
   color: rgba(0, 0, 0, 1);
+  margin: 0 0 8px;
+  text-align: center;
 }
 
 .example__option {
+  position: absolute;
+  top: 48px;
+  padding: 0 32px;
+  margin: 0;
   font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
   color: rgba(68, 68, 68, 1);
+  z-index: 2;
 }
 
 .example__cost {
+  margin-left: 46px;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 20px;

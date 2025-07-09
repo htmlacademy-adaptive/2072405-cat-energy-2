@@ -1,3 +1,7 @@
+.subscribe {
+  margin: 0 20px;
+}
+
 .subscribe__title {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -37,6 +41,7 @@
 
 .subscribe__button {
   display: block;
+  height: 56px;
   width: 100%;
   max-width: 280px;
   font-family: "Oswald", sans-serif;
