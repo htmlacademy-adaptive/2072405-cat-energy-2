@@ -15,7 +15,6 @@
 
 <body class="page__body">
   <header class="main-header">
-
     <a class="main-header__logo" href="#">
       <picture>
         <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml">
@@ -24,13 +23,16 @@
       </picture>
       <span class="visually-hidden">Логотип магазина Кэт Энерджи</span>
       <picture>
-
         <img class="main-header__logo main-header__logo--text" src="images/header-logo-icon.svg" width="101" height="18" alt="Cat Energy">
       </picture>
     </a>
     <nav class="main-nav main-nav--nojs">
-      <button class="main-nav__toggle main-nav__toggle--close" type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
+        <span></span>
+      </button>
+      <button class="main-nav__toggle main-nav__toggle--close visually-hidden" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
       </button>
       <ul class="main-nav__list main-nav__list--close">
         <li class="main-nav__item">
@@ -69,19 +71,15 @@
 
     <section class="programs">
       <h2 class="visually-hidden">Программы питания</h2>
-
       <div class="programs__item programs__item--slim">
-        <div class="programs__item--slim-background"></div>
-        <h3 class="programs__title">Похудение</h3>
+        <h3 class="programs__title programs__title--slim">Похудение</h3>
         <p class="programs__description">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
         </p>
         <a class="programs__link" href="#">Каталог Slim</a>
       </div>
-
       <div class="programs__item programs__item--pro">
-        <div class="programs__item--pro-background"></div>
-        <h3 class="programs__title">Набор массы</h3>
+        <h3 class="programs__title programs__title--pro">Набор массы</h3>
         <p class="programs__description">
           Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
         </p>
@@ -136,13 +134,12 @@
           </dl>
         </div>
         <p class="example__cost">Затраты на питание: <span class="example__price">15000 РУБ.</span> </p>
-        <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-slider-tablet@2x@1x.png 1x, images/cat-slider-tablet@2x@2x.png 2x">
-          <img class="example__img" src="images/cat-slider-mobile@2x@1x.png" srcset="images/cat-slider-mobile@2x@2x.png 2x" width="280" height="256" alt="2 кота: толстый и худой">
-        </picture>
         <div class="example__range-bar">
-          <button class="example__range-toggle" type="button" aria-label="Передвижение слайда">
-          </button>
+          <div class="example__range-images">
+            <div class="example__cat example__cat--before"></div>
+            <div class="example__cat example__cat--after"></div>
+          </div>
+          <button class="example__range-toggle" type="button" aria-label="Передвижение слайда"></button>
         </div>
       </div>
     </section>

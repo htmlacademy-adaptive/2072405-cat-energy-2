@@ -1,5 +1,5 @@
 .basic-products {
-  margin: 0 20px;
+  padding: 0;
 }
 
 .basic-products__list {
@@ -25,7 +25,6 @@
   display: flex;
   padding: 20px 0 17px;
   border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
 
   @media (min-width: 768px) {
     width: calc(50% - 15px);
@@ -50,6 +49,7 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #222222;
 }
@@ -102,6 +102,7 @@
   color: #444444;
   background-color: #f2f2f2;
   padding: 10px 95px 10px 94px;
+  margin: 9px;
 }
 
 .cards__image--more {
@@ -114,11 +115,29 @@
   margin: 0 auto 10px;
 }
 
-.cards__link-img {
-  margin: 10.5px 36px;
+.cards__link-image--small {
+  margin: 10.5px 36px 10.5px 56px;
+}
+
+.cards__link-image--large {
+  margin: 3.5px 28px 3.5px 48px;
+}
+
+.cards__link-image {
+  margin: 25px 145px 23px;
 }
 
 .cards__item--more {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.cards__title--more {
+  margin: 0 0 8px;
+}
+
+.cards__item--more-text {
+  margin: 0 0 21px;
 }

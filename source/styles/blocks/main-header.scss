@@ -1,8 +1,10 @@
 .main-header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 13px 21px 13px 20px;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: 768px) {
     padding: 24px 30px;

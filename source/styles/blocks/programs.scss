@@ -1,8 +1,7 @@
-.programs__wrapper {
+.programs {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin: 0;
+  margin: 0 20px;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -29,6 +28,7 @@
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #000000;
   padding-left: 90px;
@@ -39,6 +39,8 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .programs__link {
@@ -48,7 +50,7 @@
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 13px;
   display: inline-block;
 }
 

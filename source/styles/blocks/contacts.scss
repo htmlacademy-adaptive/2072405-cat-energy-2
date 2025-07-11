@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  margin-top: 20px;
 }
 
 .contacts__wrapper {
@@ -20,6 +19,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  margin: 0;
 }
 
 .contacts__address {
