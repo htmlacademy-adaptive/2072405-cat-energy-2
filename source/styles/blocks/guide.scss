@@ -1,5 +1,11 @@
-.guide__wrapper {
+.guide {
   margin: 0 20px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 0 30px 47px;
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 .guide__title {
@@ -9,6 +15,10 @@
   font-weight: 400;
   padding: 0;
   margin: 20px 0 40px;
+
+  @media (min-width: 768px) {
+    margin: 45px 0 72px;
+  }
 }
 
 .guide__list {
@@ -21,9 +31,11 @@
   gap: 20px;
 
   @media (min-width: 768px) {
-    flex-direction: row;
-    gap: 80px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 37px 153px;
+    margin: 0;
   }
 }
 
@@ -37,7 +49,13 @@
   color: #444444;
 
   @media (min-width: 768px) {
+    padding: 151px 26px 57px 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: left;
+    font-size: 16px;
+    color: #444444;
   }
 }
 
@@ -50,6 +68,12 @@
   height: 60px;
   background-color: #68b738;
   z-index: 1;
+
+  @media (min-width: 768px) {
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .guide__item::after {
@@ -68,6 +92,12 @@
   width: 30px;
   height: 32px;
   background-image: url("../../icons/leaf-icon.svg");
+
+  @media (min-width: 768px) {
+    display: block;
+    top: 25px;
+    left: 24px;
+  }
 }
 
 .guide__item--water::after {
@@ -76,6 +106,12 @@
   width: 26px;
   height: 28px;
   background-image: url("../../icons/water-icon.svg");
+
+  @media (min-width: 768px) {
+    display: block;
+    top: 26px;
+    left: 27px;
+  }
 }
 
 .guide__item--meal::after {
@@ -84,6 +120,12 @@
   width: 25px;
   height: 30px;
   background-image: url("../../icons/eat-icon.svg");
+
+  @media (min-width: 768px) {
+    display: block;
+    top: 25px;
+    left: 28px;
+  }
 }
 
 .guide__item--clock::after {
@@ -92,33 +134,72 @@
   width: 26px;
   height: 31px;
   background-image: url("../../icons/weight-icon.svg");
+
+  @media (min-width: 768px) {
+    display: block;
+    top: 24px;
+    left: 27px;
+  }
 }
 
-.guide__item--leaf--background,
-.guide__item--water--background,
-.guide__item--meal--background,
-.guide__item--clock--background {
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-color: #68b738;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 10px;
+.guide__item--text {
+  position: relative;
+  z-index: 2;
 }
 
-.guide__item--leaf--background {
-  background-image: url("../../icons/leaf-icon.svg");
+.guide__item--leaf .guide__item--text::before {
+  @media (min-width: 768px) {
+    content: "1";
+    position: absolute;
+    bottom: 96px;
+    left: 120px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    color: #f2f2f2;
+    z-index: 0;
+    pointer-events: none;
+  }
 }
 
-.guide__item--water--background {
-  background-image: url("../../icons/water-icon.svg");
+.guide__item--water .guide__item--text::before {
+  @media (min-width: 768px) {
+    content: "2";
+    position: absolute;
+    bottom: 96px;
+    left: 120px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    color: #f2f2f2;
+    z-index: 0;
+    pointer-events: none;
+  }
 }
 
-.guide__item--meal--background {
-  background-image: url("../../icons/eat-icon.svg");
+.guide__item--meal .guide__item--text::before {
+  @media (min-width: 768px) {
+    content: "3";
+    position: absolute;
+    bottom: 96px;
+    left: 120px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    color: #f2f2f2;
+    z-index: 0;
+    pointer-events: none;
+  }
 }
 
-.guide__item--clock--background {
-  background-image: url("../../icons/weight-icon.svg");
+.guide__item--clock .guide__item--text::before {
+  @media (min-width: 768px) {
+    content: "4";
+    position: absolute;
+    bottom: 96px;
+    left: 120px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    color: #f2f2f2;
+    z-index: 0;
+    pointer-events: none;
+  }
 }
+

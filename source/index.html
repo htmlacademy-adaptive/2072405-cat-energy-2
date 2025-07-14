@@ -58,9 +58,9 @@
     <section class="promo">
       <div class="promo__wrapper">
         <div class="promo__bg"></div>
-        <h1 class="promo__title title">Функциональное питание для котов</h1>
+        <h1 class="promo__title title">Функциональное <br>питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <picture>
+        <picture class="promo__image">
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desctop@2x@1x.png 1x, images/index-can-desctop@2x@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@2x@1x.png 1x, images/index-can-tablet@2x@2x.png 2x">
           <img class="promo__image" src="images/index-can-mobile@2x@1x.png" srcset="images/index-can-mobile@2x@2x.png 2x" width="280" height="270" alt="Cat Energy Pro со вкусом курицы">
@@ -90,29 +90,32 @@
     </section>
 
     <section class="guide">
-      <div class="guide__wrapper">
-        <h2 class="guide__title title">Как это работает</h2>
-        <ul class="guide__list">
-          <li class="guide__item guide__item--leaf">
+      <h2 class="guide__title title">Как это работает</h2>
+      <ul class="guide__list">
+        <li class="guide__item guide__item--leaf">
+          <span class="guide__item--text">
             Функциональное питание
             содержит только полезные
             питательные вещества.
-          </li>
-          <li class="guide__item guide__item--water">
+          </span>
+        </li>
+        <li class="guide__item guide__item--water">
+          <span class="guide__item--text">
             Выпускается в виде порошка,
             который нужно лишь залить
-            кипятком и готово.
-          </li>
-          <li class="guide__item guide__item--meal">
+            кипятком и готово.</span>
+        </li>
+        <li class="guide__item guide__item--meal">
+          <span class="guide__item--text">
             Замените один-два приема
             обычной еды на наше
-            функциональное питание.
-          </li>
-          <li class="guide__item guide__item--clock">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-          </li>
-        </ul>
-      </div>
+            функциональное питание.</span>
+        </li>
+        <li class="guide__item guide__item--clock">
+          <span class="guide__item--text">
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</span>
+        </li>
+      </ul>
     </section>
 
     <section class="example">
@@ -139,7 +142,9 @@
             <div class="example__cat example__cat--before"></div>
             <div class="example__cat example__cat--after"></div>
           </div>
-          <button class="example__range-toggle" type="button" aria-label="Передвижение слайда"></button>
+          <button class="example__range-toggle" type="button" aria-label="Передвижение слайда">
+            <span class="example__range-toggle-arrow"></span>
+          </button>
         </div>
       </div>
     </section>
