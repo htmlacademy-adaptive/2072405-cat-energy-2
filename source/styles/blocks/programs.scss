@@ -35,7 +35,7 @@
   text-transform: uppercase;
   color: #000000;
   padding-left: 90px;
-  margin: 0;
+  margin: 0 0 29px;
 
   @media (min-width: 768px) {
     padding: 0;
@@ -99,7 +99,7 @@
   top: 50%;
   transform: translateY(-50%);
   width: 50px;
-  height: 53px;
+  height: 50px;
   background-color: #68b738;
   border-radius: 50%;
   z-index: 1;
@@ -146,8 +146,14 @@
 
 .programs__title--pro::after {
   background-image: url("../../icons/cat-pro.svg");
-  width: 268px;
-  height: 112px;
-  left: 370px;
-  top: 60px;
+  width: 67px;
+  height: 28px;
+  left: -9px;
+
+  @media (min-width: 768px) {
+    width: 268px;
+    height: 112px;
+    left: 370px;
+    top: 60px;
+  }
 }

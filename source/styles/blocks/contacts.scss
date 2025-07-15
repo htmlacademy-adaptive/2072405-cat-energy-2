@@ -10,7 +10,12 @@
   align-items: center;
   padding: 26px 20px;
   gap: 20px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    gap: 308px;
+    padding: 60px 70px;
+  }
 }
 
 .contacts-lead {
@@ -20,6 +25,11 @@
   text-transform: uppercase;
   color: #111111;
   margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__address {
@@ -29,24 +39,17 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
-}
 
-@media (min-width: 768px) {
-  .contacts {
-    flex-direction: row;
-    gap: 40px;
-    align-items: flex-start;
-  }
-
-  .contacts__map-wrapper {
-    flex: 2 1 0;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
   }
 }
 
 .contacts__map-iframe {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%;
   height: 362px;
   overflow: hidden;
   border-radius: 8px;
