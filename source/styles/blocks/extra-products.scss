@@ -6,8 +6,7 @@
   padding: 0;
 
   @media (min-width: 768px) {
-    flex-direction: row;
-    gap: 32px;
+    margin: 80px 30px 70px;
   }
 }
 
@@ -30,11 +29,24 @@
   text-transform: uppercase;
   color: #222222;
   margin: 0 0 13px;
+
+
+  @media (min-width: 768px) {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }
 
 .extra-products__item {
   border-top: 1px solid #cdcdcd;
   padding-top: 13px;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    padding: 26px 38px 28px;
+  }
 }
 
 .extra-products__item:last-child {
@@ -44,6 +56,11 @@
 .extra-products__info {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 768px) {
+    grid-column: 2;
+    grid-row: 1;
+  }
 }
 
 .list__description,
@@ -66,6 +83,13 @@
   text-decoration: none;
   background-color: #68b738;
   margin: 15px 0 19px;
+
+  @media (min-width: 768px) {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    padding: 10px 285px;
+    margin: 0;
+  }
 }
 
 .extra-product__gift {
@@ -79,7 +103,7 @@
   background:
     linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, #68b738 100%),
     url("../../images/catalog-background-mobile@2x@1x.png") center top no-repeat,
-    linear-gradient(to bottom, #4c4b50 63%, #68b738 63%);
+    linear-gradient(to bottom, #4c4b50 63%, #68b738 100%);
   background-size:
     100% 100%,
     320px auto,
@@ -87,6 +111,13 @@
   background-repeat: no-repeat;
   background-position: top center, top center, top center;
   margin: 35px 20px 0;
+
+  @media (min-width: 768px) {
+    background-size:
+      100% 100%,
+      contain,
+      100% 100%;
+  }
 }
 
 .extra-products__gift-description {
@@ -97,6 +128,11 @@
   color: #ffffff;
   text-align: center;
   padding: 187px 0 43px;
+
+  @media (min-width: 768px) {
+    padding: 71px 125px 69px 421px;
+    text-align: left;
+  }
 }
 
 .extra-products__gift-description::before {
@@ -109,4 +145,17 @@
   height: 80px;
   background: url("../../icons/gift-icon.svg") no-repeat center/contain;
   z-index: 1;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 82px;
+    left: 92px;
+    top: 58px;
+  }
+}
+
+.list__price {
+  @media (min-width: 768px) {
+    margin-left: 49px;
+  }
 }
