@@ -114,34 +114,38 @@
     </section>
 
     <section class="example">
-      <div class="example__wrapper">
-        <h2 class="example__title title">
-          Живой пример
-        </h2>
-        <p class="example__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <div class="example__info">
-          <div class="example__list">
-            <dl class="example__description">
-              <dt class="example__value">5 кг</dt>
-              <dd class="example__option">cнижение <br>веса</dd>
-            </dl>
-            <dl class="example__description">
-              <dt class="example__value">60 дней</dt>
-              <dd class="example__option">затрачено <br>времени</dd>
-            </dl>
+      <div class="example__container">
+        <div class="example__content">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="example__stats">
+            <div class="example__stats-list">
+              <div class="example__stat">
+                <span class="example__stat-value">5 кг</span>
+                <span class="example__stat-label">снижение веса</span>
+              </div>
+              <div class="example__stat">
+                <span class="example__stat-value">60 дней</span>
+                <span class="example__stat-label">затрачено времени</span>
+              </div>
+            </div>
+            <p class="example__cost">
+              Затраты на питание: <span class="example__cost-value">15 000 руб.</span>
+            </p>
           </div>
-          <p class="example__cost">Затраты на питание: <span class="example__price">15000 РУБ.</span> </p>
         </div>
-        <div class="example__range-bar">
-          <div class="example__range-images">
-            <div class="example__cat example__cat--before"></div>
-            <div class="example__cat example__cat--after"></div>
+        <div class="example__slider">
+          <div class="example__slider-container">
+            <div class="example__image example__image--before"></div>
+            <div class="example__image example__image--after"></div>
+            <div class="example__toggle">
+              <button class="example__toggle-button" type="button">
+                <span class="visually-hidden">Показать результат</span>
+              </button>
+            </div>
           </div>
-          <button class="example__range-toggle" type="button" aria-label="Передвижение слайда">
-            <span class="example__range-toggle-arrow"></span>
-          </button>
         </div>
       </div>
     </section>
