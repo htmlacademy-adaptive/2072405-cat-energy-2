@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header catalog-header">
     <a class="main-header__logo" href="#">
       <picture>
         <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml">
@@ -141,7 +141,7 @@
                 </a>
                 <dl class="cards__description">
                   <dt class="cards__option">Масса</dt>
-                  <dd class="cards__option">500 г</dd>
+                  <dd class="cards__option">1000 г</dd>
                   <dt class="cards__option">Вкус</dt>
                   <dd class="cards__option">Рыба</dd>
                   <dt class="cards__option">Цена</dt>
@@ -190,7 +190,7 @@
                 </a>
                 <dl class="cards__description">
                   <dt class="cards__option">Масса</dt>
-                  <dd class="cards__option">700 г</dd>
+                  <dd class="cards__option">1000 г</dd>
                   <dt class="cards__option">Вкус</dt>
                   <dd class="cards__option">Курица</dd>
                   <dt class="cards__option">Цена</dt>
@@ -240,43 +240,45 @@
 
     <section class="extra-products">
       <h2 class="extra-products__title">Дополнительные товары</h2>
-      <ul class="extra-products-list list">
-        <li class="extra-products__item">
-          <h3 class="list__title">Сахарозаменитель</h3>
-          <div class="extra-products__info">
-            <span class="list__description">1 упаковка(100г)</span>
-            <span class="list__price">200 ₽</span>
-          </div>
-          <a class="list__link button" href="#">заказать</a>
-        </li>
-        <li class="extra-products__item">
-          <h3 class="list__title">Питьевая вода</h3>
-          <div class="extra-products__info">
-            <span class="list__description">5 литров</span>
-            <span class="list__price">50 ₽</span>
-          </div>
-          <a class="list__link button" href="#">заказать</a>
-        </li>
-        <li class="extra-products__item">
-          <h3 class="list__title">Молоко</h3>
-          <div class="extra-products__info">
-            <span class="list__description">1 литр</span>
-            <span class="list__price">100 ₽</span>
-          </div>
-          <a class="list__link button" href="#">заказать</a>
-        </li>
-        <li class="extra-products__item">
-          <h3 class="list__title">Витамины</h3>
-          <div class="extra-products__info">
-            <span class="list__description">1 упаковка(30г)</span>
-            <span class="list__price">300 ₽</span>
-          </div>
-          <a class="list__link button" href="#">заказать</a>
-        </li>
-      </ul>
-      <div class="extra-product__gift">
-        <h3 class="visually-hidden">Специальное предложение!</h3>
-        <p class="extra-products__gift-description">Закажите все <br>и получите чехол для <br>кота в подарок!</p>
+      <div class="extra-products__container">
+        <ul class="extra-products-list list">
+          <li class="extra-products__item">
+            <h3 class="list__title">Сахарозаменитель</h3>
+            <div class="extra-products__info">
+              <span class="list__description">1 упаковка(100г)</span>
+              <span class="list__price">200 ₽</span>
+            </div>
+            <a class="list__link button" href="#">заказать</a>
+          </li>
+          <li class="extra-products__item">
+            <h3 class="list__title">Питьевая вода</h3>
+            <div class="extra-products__info">
+              <span class="list__description">5 литров</span>
+              <span class="list__price">50 ₽</span>
+            </div>
+            <a class="list__link button" href="#">заказать</a>
+          </li>
+          <li class="extra-products__item">
+            <h3 class="list__title">Молоко</h3>
+            <div class="extra-products__info">
+              <span class="list__description">1 литр</span>
+              <span class="list__price">100 ₽</span>
+            </div>
+            <a class="list__link button" href="#">заказать</a>
+          </li>
+          <li class="extra-products__item">
+            <h3 class="list__title">Витамины</h3>
+            <div class="extra-products__info">
+              <span class="list__description">1 упаковка(30г)</span>
+              <span class="list__price">300 ₽</span>
+            </div>
+            <a class="list__link button" href="#">заказать</a>
+          </li>
+        </ul>
+        <div class="extra-product__gift">
+          <h3 class="visually-hidden">Специальное предложение!</h3>
+          <p class="extra-products__gift-description">Закажите все <br>и получите чехол для <br>кота в подарок!</p>
+        </div>
       </div>
     </section>
 
@@ -291,7 +293,7 @@
       </form>
     </section>
 
-    <section class="contacts">
+    <section class="contacts catalog-contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="contacts-lead">Приглашаем к сотрудничеству дилеров!</p>
@@ -302,7 +304,8 @@
       </div>
       <div class="contacts__map-wrapper contacts__map-wrapper--nojs">
         <div class="contacts__map-iframe">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6099009635256!2d30.320894315877148!3d59.938794181876504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fdf7f7b1b%3A0x7b1c1e1f7e1f7b1b!2z0JHQtdC70L7QstCw0YAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sIDE5LzgsINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGC0LAg0JrQvtC80L7QvdC-0Lkg0L_RgNC-0YHQvy4sINCR0LXQu9C-0LLQsNGNw!5e0!3m2!1sru!2sru!4v1719920000000!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта расположения офиса Cat Energy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6!2d30.320894!3d59.938794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fdf7f7b1b%3A0x7b1c1e1f7e1f7b1b!2sБелогвардейский%20бульвар%2C%20Санкт-Петербург!5e0!3m2!1sru!2sru!4v1719920000000!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта расположения офиса Cat Energy">
+          </iframe>
         </div>
       </div>
     </section>

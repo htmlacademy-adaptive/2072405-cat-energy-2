@@ -1,4 +1,5 @@
 .contacts {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
@@ -16,6 +17,15 @@
     gap: 308px;
     padding: 60px 70px;
   }
+
+  @media (min-width: 1440px) {
+    gap: 87px;
+    padding: 60px 78px 60px 80px;
+    position: absolute;
+    left: 110px;
+    top: 95px;
+    z-index: 2;
+  }
 }
 
 .contacts-lead {
@@ -29,6 +39,10 @@
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 26px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 163px;
   }
 }
 
@@ -44,6 +58,11 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+  @media (min-width: 1440px) {
+    width: 157px;
+    text-align: left;
   }
 }
 
@@ -62,5 +81,13 @@
     height: 100%;
     border: 0;
     display: block;
+  }
+}
+
+.catalog-contacts .contacts__wrapper {
+  background-color: #f2f2f2;
+
+  @media (min-width: 1440px) {
+    background-color: #ffffff;
   }
 }

@@ -23,13 +23,16 @@
 .cards__item {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   padding: 20px 0 25px;
+  height: 209px;
   border-top: 1px solid #ebebeb;
 
   @media (min-width: 768px) {
     padding: 29px 37px 40px;
     background: linear-gradient(to bottom, #ffffff 81px, #f2f2f2 81px);
     border: none;
+    height: 511px;
   }
 }
 
@@ -117,6 +120,10 @@
   @media (min-width: 768px) {
     padding: 10px 94px;
   }
+
+  @media (min-width: 1440px) {
+    padding: 10px 54px;
+  }
 }
 
 .cards__button--more {
@@ -138,7 +145,6 @@
   background-image: url("../../icons/plus-icon.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 0 auto 10px;
 
   @media (min-width: 768px) {
     width: 60px;
@@ -163,7 +169,7 @@
 }
 
 .cards__link-image {
-  margin: 25px 145px 23px;
+  margin: 0 145px 23px;
 
   @media (min-width: 768px) {
     margin: 0 auto 50px;

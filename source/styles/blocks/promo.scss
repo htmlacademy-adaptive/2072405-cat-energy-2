@@ -14,9 +14,13 @@
     padding-top: 65px;
     padding-bottom: 0;
   }
+
+  @media (min-width: 1440px) {
+    height: 580px;
+  }
 }
 
-.promo__bg {
+.promo__background {
   position: absolute;
   top: 0;
   left: 0;
@@ -25,7 +29,7 @@
   background-image:
     linear-gradient(to bottom, rgba(#68b738, 0.85) 62.92%, #68b738 100%),
     image-set(url("../../images/index-background-desktop2@2x@2x.png")),
-    linear-gradient(to bottom, #4c4b50 62.92%, #68b738 62.92%);
+    linear-gradient(to bottom, #4c4b50 62.92%, #68b738 100%);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% auto, 320px auto, 100% auto;
@@ -33,6 +37,16 @@
 
   @media (min-width: 768px) {
     display: none;
+  }
+
+  @media (min-width: 1440px) {
+    display: block;
+    width: 720px;
+    height: 694px;
+    top: -104px;
+    left: 720px;
+    background-size: 100% auto, 650px auto, 100% auto;
+    background-position: top center, 250px 55px, top center;
   }
 }
 
@@ -46,7 +60,6 @@
 
   @media (min-width: 768px) {
     font-size: 60px;
-    line-height: 1;
     margin-left: 120px;
     margin-bottom: 40px;
     color: #000000;
@@ -56,7 +69,7 @@
 .promo__slogan {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   color: #ffffff;
   text-transform: uppercase;
   margin-top: 25px;
@@ -64,7 +77,6 @@
 
   @media (min-width: 768px) {
     font-size: 20px;
-    line-height: 1;
     margin-top: 0;
     margin-bottom: 21px;
     margin-left: 120px;
@@ -95,9 +107,10 @@
   @media (min-width: 768px) {
     position: absolute;
     top: 295px;
-    width: 244px;
     padding: 14px 24px 14px 26px;
     margin-left: 120px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -105,6 +118,16 @@
   position: relative;
 
   @media (min-width: 768px) {
-    left: 30px;
+    left: 15px;
   }
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    left: 278px;
+    top: 10px;
+  }
+}
+
+.promo {
+  position: relative;
 }

@@ -33,6 +33,10 @@
     align-items: center;
     gap: 0;
   }
+
+  @media (min-width: 1440px) {
+    width: 752px;
+  }
 }
 
 .subscribe__input {

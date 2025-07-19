@@ -10,6 +10,11 @@
     padding: 25px 34px 0 30px;
     border: none;
   }
+
+  @media (min-width: 1440px) {
+    padding: 55px 110px 0;
+    border: none;
+  }
 }
 
 .main-header__logo {
