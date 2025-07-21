@@ -263,20 +263,20 @@
   background-size: contain;
 
   &--before {
-    background-image: url("../../images/slider-before-mobile@2x@1x.png");
+    background-image: url("../../images/slider-before-mobile@1x.png");
     clip-path: inset(0 50% 0 0);
 
     @media (min-width: 768px) {
-      background-image: url("../../images/slider-before-tablet@2x@1x.png");
+      background-image: url("../../images/slider-before-tablet@1x.png");
     }
   }
 
   &--after {
-    background-image: url("../../images/slider-after-mobile@2x@1x.png");
+    background-image: url("../../images/slider-after-mobile@1x.png");
     clip-path: inset(0 0 0 50%);
 
     @media (min-width: 768px) {
-      background-image: url("../../images/slider-after-tablet@2x@1x.png");
+      background-image: url("../../images/slider-after-tablet@1x.png");
     }
   }
 }

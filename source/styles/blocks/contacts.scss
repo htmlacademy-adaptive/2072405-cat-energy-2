@@ -66,6 +66,13 @@
   }
 }
 
+.contacts-city {
+  @media (min-width: 768px) {
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
+
 .contacts__map-iframe {
   position: relative;
   width: 100%;
