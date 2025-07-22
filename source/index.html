@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header index-header">
+  <header class="main-header index-header" data-test="header">
     <a class="main-header__logo" href="#">
       <picture>
         <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml">
@@ -55,7 +55,7 @@
   </header>
 
   <main class="main-container">
-    <section class="promo">
+    <section class="promo" data-test="hero">
       <div class="promo__background"></div>
       <div class="promo__wrapper">
         <h1 class="promo__title title">Функциональное <br>питание для котов</h1>
@@ -69,7 +69,7 @@
       </div>
     </section>
 
-    <section class="programs">
+    <section class="programs" data-test="programs">
       <h2 class="visually-hidden">Программы питания</h2>
       <div class="programs__item programs__item--slim">
         <h3 class="programs__title programs__title--slim">Похудение</h3>
@@ -89,7 +89,7 @@
       </div>
     </section>
 
-    <section class="guide">
+    <section class="guide" data-test="features">
       <h2 class="guide__title title">Как это работает</h2>
       <ul class="guide__list">
         <li class="guide__item guide__item--leaf">
@@ -113,7 +113,7 @@
       </ul>
     </section>
 
-    <section class="example">
+    <section class="example" data-test="proof">
       <div class="example__container">
         <div class="example__content">
           <h2 class="example__title">Живой пример</h2>
@@ -141,6 +141,7 @@
             <div class="example__image example__image--before"></div>
             <div class="example__image example__image--after"></div>
             <div class="example__toggle">
+              <span class="example__toggle-line"></span>
               <button class="example__toggle-button" type="button">
                 <span class="visually-hidden">Показать результат</span>
               </button>
@@ -150,7 +151,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" data-test="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="contacts-lead">Приглашаем к сотрудничеству дилеров!</p>
@@ -162,7 +163,7 @@
       </div>
       <div class="contacts__map-wrapper contacts__map-wrapper--nojs">
         <div class="contacts__map-iframe">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6!2d30.320894!3d59.938794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fdf7f7b1b%3A0x7b1c1e1f7e1f7b1b!2sБелогвардейский%20бульвар%2C%20Санкт-Петербург!5e0!3m2!1sru!2sru!4v1719920000000!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта расположения офиса Cat Energy">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта расположения офиса Cat Energy">
           </iframe>
 
         </div>
@@ -172,7 +173,7 @@
 
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer" data-test="footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo-link" href="#">
         <picture>
