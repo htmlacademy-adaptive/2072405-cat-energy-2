@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
+  background-color: $basic_grey;
 }
 
 .contacts__wrapper {
@@ -11,14 +11,14 @@
   align-items: center;
   padding: 26px 20px;
   gap: 20px;
-  background-color: #ffffff;
+  background-color: $white;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     gap: 308px;
     padding: 60px 70px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     gap: 87px;
     padding: 60px 78px 60px 80px;
     position: absolute;
@@ -33,15 +33,15 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: $special_black;
   margin: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 26px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     width: 163px;
   }
 }
@@ -52,22 +52,22 @@
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $special_dark-grey;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     width: 157px;
     text-align: left;
   }
 }
 
 .contacts-city {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: inline-block;
     margin-top: 20px;
   }
@@ -92,9 +92,9 @@
 }
 
 .catalog-contacts .contacts__wrapper {
-  background-color: #f2f2f2;
+  background-color: $basic_grey;
 
-  @media (min-width: 1440px) {
-    background-color: #ffffff;
+  @media (min-width: $desktop) {
+    background-color: $white;
   }
 }

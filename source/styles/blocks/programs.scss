@@ -4,11 +4,11 @@
   margin: 0 20px;
   overflow: hidden;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     margin: 0 30px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     flex-direction: row;
     gap: 80px;
     margin: 0 110px;
@@ -16,14 +16,14 @@
 }
 
 .programs__item {
-  padding: 20px;
-  background-color: #f2f2f2;
+  padding: 30px 33px 18px 20px;
+  background-color: $basic_grey;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding: 77px 316px 53px 52px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     box-sizing: border-box;
     padding: 77px 61px 55px 52px;
     width: 570px;
@@ -34,11 +34,11 @@
 .programs__item--slim {
   margin-bottom: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     margin-bottom: 30px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     margin-bottom: 0;
   }
 }
@@ -50,17 +50,17 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
   padding-left: 90px;
   margin: 0 0 29px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding: 0;
     font-size: 36px;
     line-height: 1;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     padding-left: 162px;
   }
 }
@@ -69,22 +69,22 @@
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $special_dark-grey;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
   margin: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding: 0;
     border: none;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: $black;
     margin-top: 24px;
     margin-bottom: 48px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     margin-top: 73px;
     margin-bottom: 23px;
   }
@@ -95,26 +95,34 @@
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
   text-decoration: none;
-  margin-top: 13px;
+  margin-top: 15px;
   display: inline-block;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     font-size: 20px;
-    color: #000000;
+    color: $black;
   }
 }
 
 .programs__link::after {
   display: inline-block;
-  width: 32px;
+  width: 24px;
   height: 12px;
   background-image: url("../../icons/arrow-icon.svg");
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
   margin-left: 15px;
+}
+
+.programs__link:active {
+  opacity: 0.3;
+}
+
+.programs__link:hover::after {
+  width: 32px;
 }
 
 .programs__title::before {
@@ -125,11 +133,11 @@
   transform: translateY(-50%);
   width: 50px;
   height: 50px;
-  background-color: #68b738;
+  background-color: $basic_green;
   border-radius: 50%;
   z-index: 1;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     left: 400px;
     top: 15px;
     width: 200px;
@@ -137,7 +145,7 @@
     transform: none;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     left: 0;
     top: -39px;
     width: 100px;
@@ -156,7 +164,7 @@
   z-index: 2;
   pointer-events: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     top: 0;
     transform: none;
   }
@@ -168,14 +176,14 @@
   height: 50px;
   left: 7;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     width: 140px;
     height: 194px;
     left: 430px;
     top: 10px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     width: 70px;
     height: 97px;
     left: 25px;
@@ -189,14 +197,14 @@
   height: 28px;
   left: -9px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     width: 268px;
     height: 112px;
     left: 370px;
     top: 60px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     width: 134px;
     height: 56px;
     left: -10px;

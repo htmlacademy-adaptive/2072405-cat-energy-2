@@ -1,13 +1,13 @@
 .guide {
   margin: 0 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     margin: 0;
     padding: 0 30px 47px;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid $special_grey-3;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     padding: 0;
     margin: 0 110px;
     border-bottom: none;
@@ -22,7 +22,7 @@
   padding: 0;
   margin: 20px 0 40px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     margin: 45px 0 32px;
     font-size: 60px;
     line-height: 1;
@@ -39,7 +39,7 @@
   gap: 20px;
   counter-reset: guide-counter;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -47,7 +47,7 @@
     margin: 0;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 0 94px;
@@ -66,7 +66,7 @@
   z-index: 3;
   counter-increment: guide-counter;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     position: relative;
     padding: 124px 26px 57px 0;
     margin-top: 27px;
@@ -88,10 +88,10 @@
   top: 0;
   width: 60px;
   height: 60px;
-  background-color: #68b738;
+  background-color: $basic_green;
   z-index: 2;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: block;
     width: 80px;
     height: 80px;
@@ -99,14 +99,14 @@
 }
 
 .guide__item::after {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     content: counter(guide-counter);
     position: absolute;
     top: 90px;
     left: 120px;
     font-family: "Oswald", sans-serif;
     font-size: 280px;
-    color: #f2f2f2;
+    color: $basic_grey;
     z-index: -1;
     pointer-events: none;
   }

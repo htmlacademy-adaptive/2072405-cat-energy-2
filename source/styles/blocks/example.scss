@@ -2,14 +2,14 @@
   background-color: #eaeaea;
   padding: 25px 20px 40px;
 
-  @media (min-width: 768px) {
-    background-color: #ffffff;
+  @media (min-width: $tablet) {
+    background-color: $white;
     padding: 0;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     padding: 0 110px 75px;
-    background: linear-gradient(to bottom, #ffffff 172px, #eaeaea 172px);
+    background: linear-gradient(to bottom, $white 172px, $special_grey-4 172px);
   }
 }
 
@@ -17,13 +17,13 @@
   max-width: 1220px;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
     gap: 100px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 1fr 690px;
     gap: 0;
@@ -32,11 +32,11 @@
 }
 
 .example__content {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     padding: 0 30px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     grid-column: 1;
   }
 }
@@ -48,13 +48,13 @@
   font-weight: 400;
   margin: 0 0 40px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     margin: 45px 0 60px;
     font-size: 60px;
     line-height: 1;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     font-size: 60px;
     line-height: 60px;
     margin: 0 0 146px;
@@ -65,29 +65,29 @@
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $special_dark-grey;
   margin: 0 0 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 55px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     margin-bottom: 69px;
   }
 }
 
 .example__stats {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -101,7 +101,7 @@
   justify-content: center;
   margin-bottom: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     justify-content: flex-start;
     gap: 43px;
     margin-bottom: 0;
@@ -116,10 +116,10 @@
   justify-content: center;
   width: 124px;
   height: 56px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $special_grey;
   border-radius: 4px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     width: 162px;
     height: 77px;
   }
@@ -131,16 +131,16 @@
     left: 50%;
     width: 59px;
     height: 2px;
-    background-color: #eaeaea;
+    background-color: $special_grey-4;
     transform: translateX(-50%);
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       width: 142px;
-      background-color: #ffffff;
+      background-color: $white;
     }
 
-    @media (min-width: 1440px) {
-      background-color: #eaeaea;
+    @media (min-width: $desktop) {
+      background-color: $special_grey-4;
     }
   }
 }
@@ -152,7 +152,7 @@
   font-weight: 400;
   margin-bottom: 8px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     font-size: 30px;
     line-height: 37px;
   }
@@ -168,18 +168,19 @@
   line-height: 1;
   color: #444444;
   text-align: center;
-  background-color: #eaeaea;
+  background-color: $special_grey-4;
   padding: 0 10px;
   z-index: 2;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     font-size: 14px;
-    background-color: #ffffff;
+    background-color: $white;
     bottom: -7px;
+    width: 125px;
   }
 
-  @media (min-width: 1440px) {
-    background-color: #eaeaea;
+  @media (min-width: $desktop) {
+    background-color: $special_grey-4;
   }
 }
 
@@ -189,17 +190,18 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
+  margin: 20px 0;
   padding: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 1;
     text-align: right;
     width: 174px;
+    margin: 0;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     width: 327px;
     text-align: left;
   }
@@ -208,27 +210,27 @@
 .example__cost-value {
   font-weight: 400;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: block;
     margin-top: 9px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     display: inline;
     margin-left: 60px;
   }
 }
 
 .example__slider {
-  background-color: #eaeaea;
+  background-color: $special_grey-4;
   margin-top: 20px;
 
-  @media (min-width: 768px) {
-    background: linear-gradient(to bottom, #ffffff 151px, #eaeaea 151px);
+  @media (min-width: $tablet) {
+    background: linear-gradient(to bottom, $white 151px, $special_grey-4 151px);
     height: 613px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     grid-column: 2;
     height: 512px;
   }
@@ -241,12 +243,12 @@
   margin: 0 auto;
   border-radius: 8px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     width: 560px;
     height: 512px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     width: 690px;
     height: 100%;
   }
@@ -266,7 +268,7 @@
     background-image: url("../../images/slider-before-mobile@1x.png");
     clip-path: inset(0 50% 0 0);
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       background-image: url("../../images/slider-before-tablet@1x.png");
     }
   }
@@ -275,7 +277,7 @@
     background-image: url("../../images/slider-after-mobile@1x.png");
     clip-path: inset(0 0 0 50%);
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       background-image: url("../../images/slider-after-tablet@1x.png");
     }
   }
@@ -293,32 +295,12 @@
   justify-content: center;
 }
 
-.example__toggle-line {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 4px;
-  height: 256px;
-  background: #666666;
-  border-radius: 2px;
-  z-index: 1;
-
-  @media (min-width: $tablet) {
-    height: 512px;
-  }
-}
-
-.example__toggle-line:hover {
-  background: #68b738;
-}
-
 .example__toggle-button {
   position: relative;
   width: 40px;
   height: 40px;
-  background-color: #ffffff;
-  border: 2px solid #666666;
+  background-color: $white;
+  border: 2px solid $special_grey-2;
   border-radius: 50%;
   cursor: pointer;
   z-index: 2;
@@ -333,28 +315,69 @@
   height: 0;
   border-style: solid;
   border-width: 0 9px 8px;
-  border-color: transparent transparent #666666;
+  border-color: transparent transparent $special_grey-2;
 }
 
 .example__toggle-button::before {
-  left: 0;
+  left: 2px;
   top: 15px;
   transform: rotate(270deg);
 }
 
 .example__toggle-button::after {
-  right: 0;
+  right: 2px;
   top: 15px;
   transform: rotate(90deg);
 }
 
+.example__toggle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 256px;
+  background-color: $special_grey-2;
+  border-radius: 2px;
+  cursor: pointer;
+  z-index: 1;
+
+  @media (min-width: $tablet) {
+    height: 512px;
+  }
+}
 
 .example__toggle:hover .example__toggle-button::before {
-  border-color: transparent transparent #68b738;
+  border-color: transparent transparent $basic_green;
 }
 
 .example__toggle:hover .example__toggle-button::after {
-  border-color: transparent transparent #68b738;
+  border-color: transparent transparent $basic_green;
+}
+
+.example__toggle:hover::before {
+  background-color: $basic_green;
+}
+
+.example__toggle:hover .example__toggle-button {
+  border: 2px solid $basic_green;
+}
+
+.example__toggle:active .example__toggle-button::before {
+  border-color: transparent transparent $basic_green-2;
+}
+
+.example__toggle:active .example__toggle-button::after {
+  border-color: transparent transparent $basic_green-2;
+}
+
+.example__toggle:active::before {
+  background-color: $basic_green-2;
+}
+
+.example__toggle:active .example__toggle-button {
+  border: 2px solid $basic_green-2;
 }
 
 .visually-hidden {

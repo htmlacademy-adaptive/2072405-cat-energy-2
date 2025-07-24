@@ -4,22 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <title>CAT ENERGY</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/152.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header catalog-header">
-    <a class="main-header__logo" href="#">
+    <a class="main-header__logo" href="/">
       <picture>
-        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml">
-        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml">
         <img class="main-header__logo" src="images/logo-icon.svg" width="33" height="38" alt="Логотип Cat Energy.">
       </picture>
       <span class="visually-hidden">Логотип магазина Кэт Энерджи</span>
       <picture>
-        <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml">
         <img class="main-header__logo main-header__logo--text" src="images/header-logo-icon.svg" width="101" height="18" alt="Cat Energy">
       </picture>
     </a>
@@ -55,7 +56,7 @@
         <h2 class="visually-hidden">Основные товары</h2>
         <div class="basic-products__wrapper">
           <ul class="basic-products__list cards">
-            <li class="cards__item cards__item--basic">
+            <li class="cards__item cards__item--basic" id="pro-products">
               <div class="cards__info">
                 <a class="cards__link-image--small" href="#" aria-label="Страница товара">
                   <picture>
@@ -65,7 +66,7 @@
                 </a>
                 <div class="cards__text">
                   <a class="cards__link-text" href="#">
-                    <h3 class="cards__title">Cat Enegy <br>PRO 500г</h3>
+                    <h3 class="cards__title">Cat Enegy <br class="mobile-break">PRO 500г</h3>
                   </a>
                   <dl class="cards__description">
                     <dt class="cards__option">Масса</dt>
@@ -90,7 +91,7 @@
                 </a>
                 <div class="cards__text">
                   <a class="cards__link-text" href="#">
-                    <h3 class="cards__title">Cat Enegy <br>PRO 1000г</h3>
+                    <h3 class="cards__title">Cat Enegy <br class="mobile-break">PRO 1000г</h3>
                   </a>
                   <dl class="cards__description">
                     <dt class="cards__option">Масса</dt>
@@ -114,7 +115,7 @@
                 </a>
                 <div class="cards__text">
                   <a class="cards__link-text" href="#">
-                    <h3 class="cards__title">Cat Enegy <br>PRO 500г</h3>
+                    <h3 class="cards__title">Cat Enegy <br class="mobile-break">PRO 500г</h3>
                   </a>
                   <dl class="cards__description">
                     <dt class="cards__option">Масса</dt>
@@ -139,7 +140,7 @@
                 </a>
                 <div class="cards__text">
                   <a class="cards__link-text" href="#">
-                    <h3 class="cards__title">Cat Enegy <br>PRO 1000г</h3>
+                    <h3 class="cards__title">Cat Enegy <br class="mobile-break">PRO 1000г</h3>
                   </a>
                   <dl class="cards__description">
                     <dt class="cards__option">Масса</dt>
@@ -153,7 +154,7 @@
               </div>
               <a class="cards__button button" href="#">Заказать</a>
             </li>
-            <li class="cards__item cards__item--basic">
+            <li class="cards__item cards__item--basic" id="slim-products">
               <div class="cards__info">
                 <a class="cards__link-image--small" href="#" aria-label="Страница товара">
                   <picture>
@@ -163,7 +164,7 @@
                 </a>
                 <div class="cards__text">
                   <a class="cards__link-text" href="#">
-                    <h3 class="cards__title">Cat Enegy <br>Slim 500г</h3>
+                    <h3 class="cards__title">Cat Enegy <br class="mobile-break">Slim 500г</h3>
                   </a>
                   <dl class="cards__description">
                     <dt class="cards__option">Масса</dt>
@@ -188,7 +189,7 @@
                 </a>
                 <div class="cards__text">
                   <a class="cards__link-text" href="#">
-                    <h3 class="cards__title">Cat Enegy <br>Slim 1000г</h3>
+                    <h3 class="cards__title">Cat Enegy <br class="mobile-break">Slim 1000г</h3>
                   </a>
                   <dl class="cards__description">
                     <dt class="cards__option">Масса</dt>
@@ -212,7 +213,7 @@
                 </a>
                 <div class="cards__text">
                   <a class="cards__link-text" href="#">
-                    <h3 class="cards__title">Cat Enegy <br>Slim 500г</h3>
+                    <h3 class="cards__title">Cat Enegy <br class="mobile-break">Slim 500г</h3>
                   </a>
                   <dl class="cards__description">
                     <dt class="cards__option">Масса</dt>
@@ -306,10 +307,9 @@
             Санкт-Петербург</span>
         </address>
       </div>
-      </di>
       <div class="contacts__map-wrapper contacts__map-wrapper--nojs">
         <div class="contacts__map-iframe">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта расположения офиса Cat Energy">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта расположения офиса Cat Energy">
           </iframe>
         </div>
       </div>
@@ -320,31 +320,30 @@
     <div class="main-footer__wrapper">
       <a class="main-footer__logo-link" href="#">
         <picture>
-          <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml">
           <img class="main-footer__logo" src="images/header-logo-icon.svg" width="101" height="18" alt="Cat Energy">
         </picture>
       </a>
       <ul class="main-footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#">
+          <a class="social__link social__link--vkontakte footer-link" href="#">
             <span class="visually-hidden">Мы в Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
+          <a class="social__link social__link--youtube footer-link" href="#">
             <span class="visually-hidden">Мы на Ютуб</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">
+          <a class="social__link social__link--telegram footer-link" href="#">
             <span class="visually-hidden">Мы в Телеграм</span>
           </a>
         </li>
       </ul>
       <div class="author">
-        <a class="author__link author__link--text" href="#">HTML Academy</a>
-        <a class="author__link author__link--img" href="#">
-          <img class="logo" src="images/footer-logo.svg" width="27" height="34" alt="HTML Академия">
+        <a class="author__link author__link--text" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">HTML Academy</a>
+        <a class="author__link author__link--image footer-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
+          <span class="visually-hidden">Логотип HTML Академии</span>
         </a>
       </div>
     </div>
