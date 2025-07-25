@@ -1,9 +1,14 @@
+
+.extra-products {
+  overflow: hidden;
+  position: relative;
+}
+
 .extra-products__container {
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 110px;
   }
 }
 
@@ -11,11 +16,11 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  margin: 0;
   padding: 0;
 
   @media (min-width: $tablet) {
-    margin: 0 30px 70px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop) {
@@ -25,63 +30,32 @@
 }
 
 .extra-products__title {
-  position: relative;
   display: block;
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 1;
-  font-weight: 400;
-  color: $black;
   margin: 0;
-  padding: 25px 74px 36px 20px;
+  padding: 25px 0 36px;
 
   @media (min-width: $tablet) {
     padding: 74px 40px 80px;
-    font-size: 32px;
-    margin-left: 30px;
   }
 
   @media (min-width: $desktop) {
     padding: 71px 0 80px;
-    font-size: 40px;
-    margin-left: 110px;
   }
 }
 
 .extra-products__title::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 0;
+  width: 100vw;
+  top: 43px;
+  transform: translateY(-50%);
+  left: 266px;
   height: 2px;
   background-color: $basic_green;
 
   @media (min-width: $tablet) {
-    width: 30px;
-    left: -30px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 70px;
-    left: -110px;
-  }
-}
-
-.extra-products__title::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 34px;
-  height: 2px;
-  background-color: $basic_green;
-
-  @media (min-width: $tablet) {
-    width: 357px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 914px;
+    left: 0;
+    top: 96px;
   }
 }
 
@@ -227,10 +201,8 @@
     100% 100%;
   background-repeat: no-repeat;
   background-position: top center, top center, top center;
-  margin: 35px 20px 0;
 
   @media (min-width: $tablet) {
-    margin: 0 30px;
     background:
       linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, $basic_green 100%),
       url("../../images/catalog-background-tablet@1x.png") center top no-repeat,
@@ -298,5 +270,27 @@
 .list__price {
   @media (min-width: $tablet) {
     margin-left: 49px;
+  }
+}
+
+.extra-products__title span {
+  position: relative;
+  left: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  color: $black;
+  background-color: $white;
+  padding-right: 40px;
+
+  @media (min-width: $tablet) {
+    padding: 0 40px;
+    left: -40px;
+    font-size: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 40px;
   }
 }

@@ -1,17 +1,10 @@
-.programs {
+.programs-container {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
-  overflow: hidden;
-
-  @media (min-width: $tablet) {
-    margin: 0 30px;
-  }
 
   @media (min-width: $desktop) {
     flex-direction: row;
-    gap: 80px;
-    margin: 0 110px;
+    justify-content: space-between;
   }
 }
 

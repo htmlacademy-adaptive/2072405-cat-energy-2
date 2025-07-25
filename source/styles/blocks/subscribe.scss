@@ -1,13 +1,5 @@
-.subscribe {
-  margin: 0 20px;
-
-  @media (min-width: $tablet) {
-    margin: 0 30px;
-  }
-}
 
 .subscribe__title {
-  position: relative;
   display: block;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -23,46 +15,27 @@
   }
 
   @media (min-width: $desktop) {
-    padding-left: 80px;
     font-size: 40px;
+    padding: 0;
   }
 }
 
 .subscribe__title::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 0;
+  width: 100vw;
+  top: 52px;
+  left: 192px;
   height: 2px;
   background-color: $basic_green;
 
   @media (min-width: $tablet) {
-    width: 30px;
-    left: -30px;
+    left: 0;
+    top: 96px;
   }
 
   @media (min-width: $desktop) {
-    width: 70px;
-    left: -30px;
-  }
-}
-
-.subscribe__title::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -20px;
-  width: 108px;
-  height: 2px;
-  background-color: $basic_green;
-
-  @media (min-width: $tablet) {
-    width: 456px;
-    right: -30px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 1053px;
+    top: 100px;
   }
 }
 
@@ -73,7 +46,7 @@
   color: $black;
   font-weight: 400;
   padding: 0;
-  margin: 0 auto 24px;
+  margin-bottom: 24px;
   text-align: center;
 
   @media (min-width: $tablet) {
@@ -87,7 +60,6 @@
 .subscribe__input-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
   margin-top: 20px;
 
   @media (min-width: $tablet) {
@@ -162,4 +134,31 @@
 .subscribe__button:active {
   background-color: $basic_green-2;
   opacity: 0.3;
+}
+
+.subscribe__title span {
+  position: relative;
+  left: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  color: $black;
+  background-color: $white;
+  padding-right: 40px;
+
+  @media (min-width: $tablet) {
+    padding: 0 40px;
+    left: -40px;
+    font-size: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 40px;
+  }
+}
+
+.subscribe {
+  overflow: hidden;
+  position: relative;
 }

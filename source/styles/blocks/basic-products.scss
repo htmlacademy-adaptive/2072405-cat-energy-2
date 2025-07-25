@@ -1,14 +1,6 @@
 .basic-products {
   padding: 0;
   overflow: hidden;
-
-  @media (min-width: $tablet) {
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop) {
-    padding: 0 110px;
-  }
 }
 
 .basic-products__list {
@@ -141,7 +133,6 @@
   color: #ffffff;
   text-decoration: none;
   background-color: $basic_green;
-  margin: 0 auto;
 
   @media (min-width: $tablet) {
     margin-top: 15px;
@@ -166,11 +157,10 @@
   color: #444444;
   background-color: $basic_grey;
   padding: 10px 95px 10px 94px;
-  margin: 9px;
 
   @media (min-width: $tablet) {
     padding: 10px 79px 10px 80px;
-    margin: 0;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop) {
@@ -198,7 +188,7 @@
 }
 
 .cards__link-image--small {
-  margin: 10.5px 36px 10.5px 56px;
+  margin: 10.5px 36px;
 
   @media (min-width: $tablet) {
     margin: 29px auto 41px;
@@ -206,7 +196,7 @@
 }
 
 .cards__link-image--large {
-  margin: 3.5px 28px 3.5px 48px;
+  margin: 3.5px 28px;
 
   @media (min-width: $tablet) {
     margin: 12px auto 24px;
@@ -214,7 +204,7 @@
 }
 
 .cards__link-image--more {
-  margin: 0 145px 23px;
+  margin: 0 125px 23px;
 
   @media (min-width: $tablet) {
     margin: 0 auto 50px;
