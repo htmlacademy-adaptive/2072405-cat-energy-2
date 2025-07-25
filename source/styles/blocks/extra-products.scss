@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 110px;
   }
 }
 
@@ -11,11 +10,11 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  margin: 0;
   padding: 0;
 
   @media (min-width: $tablet) {
-    margin: 0 30px 70px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop) {
@@ -27,38 +26,34 @@
 .extra-products__title {
   position: relative;
   display: block;
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 1;
-  font-weight: 400;
-  color: $black;
   margin: 0;
-  padding: 25px 74px 36px 20px;
+  padding: 25px 0 36px;
 
   @media (min-width: $tablet) {
     padding: 74px 40px 80px;
-    font-size: 32px;
-    margin-left: 30px;
   }
 
   @media (min-width: $desktop) {
     padding: 71px 0 80px;
-    font-size: 40px;
-    margin-left: 110px;
   }
 }
 
 .extra-products__title::before {
   content: "";
   position: absolute;
+  width: 100vw;
   top: 50%;
-  left: 0;
+  transform: translateY(-50%);
+  left: 266px;
   height: 2px;
   background-color: $basic_green;
 
   @media (min-width: $tablet) {
-    width: 100vw;
-    left: 0;
+    left: -30px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 40px;
   }
 }
 
@@ -204,10 +199,8 @@
     100% 100%;
   background-repeat: no-repeat;
   background-position: top center, top center, top center;
-  margin: 35px 20px 0;
 
   @media (min-width: $tablet) {
-    margin: 0 30px;
     background:
       linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, $basic_green 100%),
       url("../../images/catalog-background-tablet@1x.png") center top no-repeat,
@@ -279,10 +272,23 @@
 }
 
 .extra-products__title span {
+  position: relative;
+  left: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  color: $black;
+  background-color: $white;
+  padding-right: 40px;
+
   @media (min-width: $tablet) {
-    position: relative;
     padding: 0 40px;
-    background-color: $white;
     left: -40px;
+    font-size: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 40px;
   }
 }

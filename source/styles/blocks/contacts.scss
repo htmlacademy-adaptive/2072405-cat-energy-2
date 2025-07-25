@@ -11,7 +11,6 @@
   padding-top: 26px;
   padding-bottom: 26px;
   gap: 20px;
-  background-color: $white;
 
   @media (min-width: $tablet) {
     gap: 0;
@@ -94,10 +93,15 @@
   }
 }
 
-.catalog-contacts .contacts__container {
+.index-contacts {
+  background-color: $white;
+}
+
+.catalog-contacts {
   background-color: $basic_grey;
 
   @media (min-width: $desktop) {
     background-color: $white;
   }
 }
+
