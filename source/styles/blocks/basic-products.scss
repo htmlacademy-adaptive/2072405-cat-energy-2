@@ -38,6 +38,8 @@
 }
 
 .cards__item--basic {
+  background-color: $white;
+
   @media (min-width: $tablet) {
     background: linear-gradient(to bottom, $white 81px, $basic_grey 81px);
     padding: 0 37px 40px;
@@ -56,7 +58,7 @@
   }
 }
 
-.cards_text {
+.cards__text {
   display: flex;
   flex-direction: column;
 }
@@ -89,7 +91,7 @@
 }
 
 .cards__option,
-.cards__item--more-text {
+.cards__item-text {
   font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 16px;
@@ -211,7 +213,7 @@
   }
 }
 
-.cards__link-image {
+.cards__link-image--more {
   margin: 0 145px 23px;
 
   @media (min-width: $tablet) {
