@@ -1,0 +1,146 @@
+.promo__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+    align-items: flex-start;
+    padding-top: 65px;
+    padding-bottom: 0;
+    min-height: 800px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: auto;
+    box-sizing: border-box;
+    height: 662px;
+    padding-top: 110px;
+  }
+}
+
+.promo__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 302px;
+  background-image:
+    linear-gradient(to bottom, rgba(#68b738, 0.85) 62.92%, $basic_green 100%),
+    image-set(url("../../images/index-background-desktop2@2x.png")),
+    linear-gradient(to bottom, $special_dark-grey 62.92%, $basic_green 100%);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto, 320px auto, 100% auto;
+  z-index: 0;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    height: 694px;
+    width: 720px;
+    top: -104px;
+    left: 720px;
+    background-size: 100% auto, 650px auto, 100% auto;
+    background-position: top center, 250px 55px, top center;
+  }
+}
+
+.promo__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+  color: $white;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    margin-left: 120px;
+    margin-bottom: 40px;
+    color: $black;
+  }
+}
+
+.promo__slogan {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  color: $white;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 21px;
+    margin-left: 120px;
+    color: $black;
+  }
+}
+
+.promo__title,
+.promo__slogan,
+.promo__image,
+.promo__link {
+  z-index: 1;
+}
+
+.promo__link {
+  display: block;
+  padding: 10px 63.5px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: $basic_green;
+  text-decoration: none;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 342px;
+    padding: 14px 24px 14px 26px;
+    margin-left: 120px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.promo__link:hover {
+  background-color: $basic_green-2;
+}
+
+.promo__link:active {
+  background-color: $basic_green-2;
+  opacity: 0.3;
+}
+
+.promo__image {
+  position: relative;
+
+  @media (min-width: $tablet) {
+    left: 15px;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    left: 278px;
+    top: 10px;
+  }
+}
+
+.promo {
+  position: relative;
+}

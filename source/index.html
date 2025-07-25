@@ -1,13 +1,206 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CAT ENERGY</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/152.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="main-header index-header" data-test="header">
+    <a class="main-header__logo" href="#">
+      <picture>
+        <img class="main-header__logo main-header__logo--image" src="images/logo-icon.svg" width="33" height="38" alt="Логотип Cat Energy.">
+      </picture>
+      <span class="visually-hidden">Логотип магазина Кэт Энерджи</span>
+      <picture>
+        <img class="main-header__logo main-header__logo--text" src="images/header-logo-icon.svg" width="101" height="18" alt="Cat Energy">
+      </picture>
+    </a>
+    <nav class="main-nav main-nav--nojs">
+      <button class="main-nav__toggle  visually-hidden" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <span></span>
+      </button>
+      <button class="main-nav__toggle main-nav__toggle--close" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+      <ul class="main-nav__list main-nav__list--close">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--index main-nav__link--current" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--catalog" href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--program" href="#">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <section class="promo" data-test="hero">
+      <div class="promo__background"></div>
+      <div class="promo__wrapper">
+        <h1 class="promo__title title">Функциональное <br>питание для котов</h1>
+        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <picture class="promo__image">
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desctop@1x.png 1x, images/index-can-desctop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tabletx@1x.png 1x, images/index-can-tablet@2x.png 2x">
+          <img class="promo__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy Pro со вкусом курицы">
+        </picture>
+        <a class="promo__link button" href="/">Подобрать программу</a>
+      </div>
+    </section>
+
+    <section class="programs" data-test="programs">
+      <h2 class="visually-hidden">Программы питания</h2>
+      <div class="programs__item programs__item--slim">
+        <h3 class="programs__title programs__title--slim">Похудение</h3>
+        <p class="programs__description">
+          Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+        </p>
+        <a class="programs__link" href="catalog.html#slim-products">Каталог Slim</a>
+      </div>
+      <div class="programs__item programs__item--pro">
+        <h3 class="programs__title programs__title--pro">Набор массы</h3>
+        <p class="programs__description">
+          Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+        </p>
+        <a class="programs__link" href="catalog.html#pro-products">Каталог Pro</a>
+      </div>
+    </section>
+
+    <section class="guide" data-test="features">
+      <h2 class="guide__title title">Как это работает</h2>
+      <ul class="guide__list">
+        <li class="guide__item guide__item--leaf">
+          Функциональное питание
+          содержит только полезные
+          питательные вещества.
+        </li>
+        <li class="guide__item guide__item--water">
+          Выпускается в виде порошка,
+          который нужно лишь залить
+          кипятком и готово.
+        </li>
+        <li class="guide__item guide__item--meal">
+          Замените один-два приема
+          обычной еды на наше
+          функциональное питание.
+        </li>
+        <li class="guide__item guide__item--clock">
+          Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+        </li>
+      </ul>
+    </section>
+
+    <section class="example" data-test="proof">
+      <div class="example__container">
+        <div class="example__content">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="example__stats">
+            <div class="example__stats-list">
+              <div class="example__stat">
+                <span class="example__stat-value">5 кг</span>
+                <span class="example__stat-label">снижение веса</span>
+              </div>
+              <div class="example__stat">
+                <span class="example__stat-value">60 дней</span>
+                <span class="example__stat-label">затрачено времени</span>
+              </div>
+            </div>
+            <p class="example__cost">
+              Затраты на питание: <span class="example__cost-value">15 000 руб.</span>
+            </p>
+          </div>
+        </div>
+        <div class="example__slider">
+          <div class="example__slider-container">
+            <div class="example__image example__image--before"></div>
+            <div class="example__image example__image--after"></div>
+            <div class="example__toggle">
+              <button class="example__toggle-button" type="button">
+                <span class="visually-hidden">Показать результат</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" data-test="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <p class="contacts-lead">Приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__address">ул. Большая
+          Конюшенная, д. 19/8
+          <span class="contacts__city">
+            Санкт-Петербург</span>
+        </address>
+      </div>
+      <div class="contacts__map-wrapper contacts__map-wrapper--nojs">
+        <div class="contacts__map-iframe">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта расположения офиса Cat Energy">
+          </iframe>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="main-footer" data-test="footer">
+    <div class="main-footer__wrapper">
+      <a class="main-footer__logo-link" href="#">
+        <picture>
+          <img class="main-footer__logo main-footer__logo--text" src="images/header-logo-icon.svg" width="101" height="18" alt="Cat Energy">
+        </picture>
+      </a>
+      <ul class="main-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte footer-link" href="#">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube footer-link" href="#">
+            <span class="visually-hidden">Мы на Ютуб</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram footer-link" href="#">
+            <span class="visually-hidden">Мы в Телеграм</span>
+          </a>
+        </li>
+      </ul>
+      <div class="author">
+        <a class="author__link author__link--text" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">HTML Academy</a>
+        <a class="author__link author__link--image footer-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
+          <span class="visually-hidden">Логотип HTML Академии</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>

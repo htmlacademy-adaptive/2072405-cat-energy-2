@@ -1,0 +1,141 @@
+.guide {
+  margin: 0 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0 30px 47px;
+    border-bottom: 1px solid $special_grey-3;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    margin: 0 110px;
+    border-bottom: none;
+  }
+}
+
+.guide__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  padding: 0;
+  margin: 20px 0 40px;
+
+  @media (min-width: $tablet) {
+    margin: 45px 0 32px;
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+
+.guide__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 63px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  counter-reset: guide-counter;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 37px 153px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 94px;
+    margin: 0;
+  }
+}
+
+.guide__item {
+  position: relative;
+  margin: 0;
+  padding-left: 80px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  z-index: 3;
+  counter-increment: guide-counter;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    padding: 124px 26px 57px 0;
+    margin-top: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+    z-index: 3;
+  }
+}
+
+.guide__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background-color: $basic_green;
+  z-index: 2;
+
+  @media (min-width: $tablet) {
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.guide__item::after {
+  @media (min-width: $tablet) {
+    content: counter(guide-counter);
+    position: absolute;
+    top: 90px;
+    left: 120px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    color: $basic_grey;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+.guide__item--leaf::before {
+  background-image: url("../../icons/leaf-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 32px;
+}
+
+.guide__item--water::before {
+  background-image: url("../../icons/water-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 28px;
+}
+
+.guide__item--meal::before {
+  background-image: url("../../icons/eat-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 30px;
+}
+
+.guide__item--clock::before {
+  background-image: url("../../icons/weight-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 31px;
+}

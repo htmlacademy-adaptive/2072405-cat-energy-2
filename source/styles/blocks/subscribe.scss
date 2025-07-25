@@ -1,0 +1,165 @@
+.subscribe {
+  margin: 0 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0 30px;
+  }
+}
+
+.subscribe__title {
+  position: relative;
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+  color: $black;
+  margin: 40px 0 32px;
+
+  @media (min-width: $tablet) {
+    margin: 80px 0 66px;
+    padding-left: 40px;
+    font-size: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 80px;
+    font-size: 40px;
+  }
+}
+
+.subscribe__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  background-color: $basic_green;
+
+  @media (min-width: $tablet) {
+    width: 30px;
+    left: -30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 70px;
+    left: -30px;
+  }
+}
+
+.subscribe__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  width: 108px;
+  height: 2px;
+  background-color: $basic_green;
+
+  @media (min-width: $tablet) {
+    width: 456px;
+    right: -30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1053px;
+  }
+}
+
+.subscribe__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $black;
+  font-weight: 400;
+  padding: 0;
+  margin: 0 auto 24px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0 38px;
+  }
+}
+
+.subscribe__input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    margin: 24px 30px 80px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 752px;
+    margin: 24px auto 104px;
+  }
+}
+
+.subscribe__input {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  flex: 1 1 0;
+  min-width: 254px;
+  padding: 13px 12px;
+  border: 1px solid $special_grey;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 16px;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    border-left: 1px solid $special_grey;
+    margin-bottom: 0;
+  }
+}
+
+.subscribe__input:focus {
+  border: 2px solid $special_dark-grey;
+}
+
+.subscribe__button {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: $basic_green;
+  border: none;
+  width: 280px;
+  height: 56px;
+  margin-bottom: 40px;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 256px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet) {
+    margin-right: 0;
+  }
+}
+
+.subscribe__button:hover {
+  background-color: $basic_green-2;
+}
+
+.subscribe__button:active {
+  background-color: $basic_green-2;
+  opacity: 0.3;
+}

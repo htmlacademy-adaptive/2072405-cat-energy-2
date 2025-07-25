@@ -1,0 +1,139 @@
+.main-footer {
+  background-color: $basic_grey;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 110px 66px;
+  }
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    gap: 160px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 416px;
+  }
+}
+
+.main-footer__social {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 74px;
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: 768px) {
+    border: none;
+    padding: 0;
+  }
+}
+
+.author__link--text {
+  width: 113px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special_dark-grey;
+  text-decoration: none;
+}
+
+.social__link--vkontakte,
+.social__link--youtube,
+.social__link--telegram {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social__link--vkontakte {
+  background-color: $special_dark-grey-2;
+  mask: url("../../icons/vk-icon.svg") center/contain no-repeat;
+  transition: background-color 0.3s ease;
+}
+
+.social__link--youtube {
+  background-color: $special_dark-grey-2;
+  mask: url("../../icons/youtube-icon.svg") center/contain no-repeat;
+  transition: background-color 0.3s ease;
+}
+
+.social__link--telegram {
+  background-color: $special_dark-grey-2;
+  mask: url("../../icons/tg-icon.svg") center/contain no-repeat;
+  transition: background-color 0.3s ease;
+}
+
+.main-footer__logo-link {
+  display: block;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 40px 96px 20px;
+
+  @media (min-width: $tablet) {
+    border: none;
+    padding: 0;
+  }
+}
+
+.main-footer__logo-link:hover {
+  opacity: 0.8;
+}
+
+.main-footer__logo-link:active {
+  opacity: 0.6;
+}
+
+.author {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 40px;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    gap: 23px;
+    justify-content: flex-end;
+  }
+}
+
+.author__link--image {
+  display: block;
+  width: 27px;
+  height: 34px;
+  background-color: $special_dark-grey-2;
+  mask: url("../../images/footer-logo.svg") center/contain no-repeat;
+  transition: background-color 0.3s ease;
+}
+
+.footer-link:hover,
+.footer-link:focus,
+.footer-link:active {
+  background-color: $basic_green;
+}
+
+.footer-link:active {
+  opacity: 0.3;
+}
+
+.author__link--text:hover,
+.author__link--text:focus {
+  opacity: 0.5;
+}
+
+.author__link--text:active {
+  opacity: 0.3;
+}

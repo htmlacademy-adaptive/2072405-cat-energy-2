@@ -1,0 +1,42 @@
+.main-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 20px 15px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet) {
+    padding: 25px 34px 0 30px;
+    border: none;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 55px 110px 0;
+    border: none;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-header__logo--text {
+  display: block;
+  margin-left: 56px;
+
+  @media (min-width: $tablet) {
+    margin-left: 13px;
+  }
+}
+
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:active {
+  opacity: 0.6;
+}
