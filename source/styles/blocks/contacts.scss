@@ -27,6 +27,7 @@
     z-index: 2;
     width: 565px;
     padding: 60px 78px 60px 80px;
+    background-color: $white;
   }
 }
 
@@ -43,6 +44,10 @@
     line-height: 26px;
     width: 163px;
     margin-left: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
   }
 }
 
@@ -71,7 +76,7 @@
 .contacts__city {
   @media (min-width: $tablet) {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 19px;
   }
 }
 
@@ -99,9 +104,4 @@
 
 .catalog-contacts {
   background-color: $basic_grey;
-
-  @media (min-width: $desktop) {
-    background-color: $white;
-  }
 }
-

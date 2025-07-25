@@ -1,3 +1,9 @@
+
+.extra-products {
+  overflow: hidden;
+  position: relative;
+}
+
 .extra-products__container {
   @media (min-width: $desktop) {
     display: flex;
@@ -24,7 +30,6 @@
 }
 
 .extra-products__title {
-  position: relative;
   display: block;
   margin: 0;
   padding: 25px 0 36px;
@@ -42,18 +47,15 @@
   content: "";
   position: absolute;
   width: 100vw;
-  top: 50%;
+  top: 43px;
   transform: translateY(-50%);
   left: 266px;
   height: 2px;
   background-color: $basic_green;
 
   @media (min-width: $tablet) {
-    left: -30px;
-  }
-
-  @media (min-width: $desktop) {
-    font-size: 40px;
+    left: 0;
+    top: 96px;
   }
 }
 

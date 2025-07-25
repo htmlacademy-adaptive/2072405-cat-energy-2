@@ -1,6 +1,5 @@
 
 .subscribe__title {
-  position: relative;
   display: block;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -16,8 +15,8 @@
   }
 
   @media (min-width: $desktop) {
-    padding-left: 80px;
     font-size: 40px;
+    padding: 0;
   }
 }
 
@@ -25,14 +24,18 @@
   content: "";
   position: absolute;
   width: 100vw;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 52px;
   left: 192px;
   height: 2px;
   background-color: $basic_green;
 
   @media (min-width: $tablet) {
-    left: -30px;
+    left: 0;
+    top: 96px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 100px;
   }
 }
 
@@ -155,6 +158,7 @@
   }
 }
 
-.title-container {
+.subscribe {
   overflow: hidden;
+  position: relative;
 }
