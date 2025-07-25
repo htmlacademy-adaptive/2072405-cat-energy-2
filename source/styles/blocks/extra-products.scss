@@ -57,31 +57,8 @@
   background-color: $basic_green;
 
   @media (min-width: $tablet) {
-    width: 30px;
-    left: -30px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 70px;
-    left: -110px;
-  }
-}
-
-.extra-products__title::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 34px;
-  height: 2px;
-  background-color: $basic_green;
-
-  @media (min-width: $tablet) {
-    width: 357px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 914px;
+    width: 100vw;
+    left: 0;
   }
 }
 
@@ -298,5 +275,14 @@
 .list__price {
   @media (min-width: $tablet) {
     margin-left: 49px;
+  }
+}
+
+.extra-products__title span {
+  @media (min-width: $tablet) {
+    position: relative;
+    padding: 0 40px;
+    background-color: $white;
+    left: -40px;
   }
 }

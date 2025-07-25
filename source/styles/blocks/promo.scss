@@ -13,11 +13,9 @@
     align-items: flex-start;
     padding-top: 65px;
     padding-bottom: 0;
-    min-height: 800px;
   }
 
   @media (min-width: $desktop) {
-    min-height: auto;
     box-sizing: border-box;
     height: 662px;
     padding-top: 110px;
@@ -28,7 +26,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 320px;
   height: 302px;
   background-image:
     linear-gradient(to bottom, rgba(#68b738, 0.85) 62.92%, $basic_green 100%),
@@ -45,12 +43,14 @@
 
   @media (min-width: $desktop) {
     display: block;
+    min-width: 720px;
+    width: 100%;
     height: 694px;
-    width: 720px;
-    top: -104px;
-    left: 720px;
+    top: -121px;
+    left: 50%;
     background-size: 100% auto, 650px auto, 100% auto;
-    background-position: top center, 250px 55px, top center;
+    background-position: top center, 250px 60px, top center;
+    overflow: hidden;
   }
 }
 
@@ -64,9 +64,13 @@
 
   @media (min-width: $tablet) {
     font-size: 60px;
-    margin-left: 120px;
+    margin-left: 90px;
     margin-bottom: 40px;
     color: $black;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 80px;
   }
 }
 
@@ -83,8 +87,12 @@
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 21px;
-    margin-left: 120px;
+    margin-left: 90px;
     color: $black;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 80px;
   }
 }
 
@@ -106,15 +114,19 @@
   color: #ffffff;
   background-color: $basic_green;
   text-decoration: none;
-  margin: 0 auto;
 
   @media (min-width: $tablet) {
     position: absolute;
-    top: 342px;
+    top: 295px;
     padding: 14px 24px 14px 26px;
-    margin-left: 120px;
+    margin-left: 90px;
     font-size: 20px;
     line-height: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 80px;
+    top: 342px;
   }
 }
 
@@ -130,13 +142,9 @@
 .promo__image {
   position: relative;
 
-  @media (min-width: $tablet) {
-    left: 15px;
-  }
-
   @media (min-width: $desktop) {
     position: absolute;
-    left: 278px;
+    left: 225px;
     top: 10px;
   }
 }
