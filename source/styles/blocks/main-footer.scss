@@ -38,7 +38,7 @@
   }
 }
 
-.author__link--text {
+.main-footer__author-link--text {
   width: 113px;
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -47,9 +47,7 @@
   text-decoration: none;
 }
 
-.social__link--vkontakte,
-.social__link--youtube,
-.social__link--telegram {
+.main-footer__social-link {
   display: block;
   width: 28px;
   height: 22px;
@@ -57,19 +55,19 @@
   background-size: contain;
 }
 
-.social__link--vkontakte {
+.main-footer__social-link--vkontakte {
   background-color: $special_dark-grey-2;
   mask: url("../../icons/vk-icon.svg") center/contain no-repeat;
   transition: background-color 0.3s ease;
 }
 
-.social__link--youtube {
+.main-footer__social-link--youtube {
   background-color: $special_dark-grey-2;
   mask: url("../../icons/youtube-icon.svg") center/contain no-repeat;
   transition: background-color 0.3s ease;
 }
 
-.social__link--telegram {
+.main-footer__social-link--telegram {
   background-color: $special_dark-grey-2;
   mask: url("../../icons/tg-icon.svg") center/contain no-repeat;
   transition: background-color 0.3s ease;
@@ -94,7 +92,7 @@
   opacity: 0.6;
 }
 
-.author {
+.main-footer__author {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -109,7 +107,7 @@
   }
 }
 
-.author__link--image {
+.main-footer__author-link--image {
   display: block;
   width: 27px;
   height: 34px;
@@ -118,21 +116,25 @@
   transition: background-color 0.3s ease;
 }
 
-.footer-link:hover,
-.footer-link:focus,
-.footer-link:active {
+.main-footer__social-link:hover,
+.main-footer__social-link:focus,
+.main-footer__social-link:active,
+.main-footer__author-link--image:hover,
+.main-footer__author-link--image:focus,
+.main-footer__author-link--image:active {
   background-color: $basic_green;
 }
 
-.footer-link:active {
+.main-footer__social-link:active,
+.main-footer__author-link--image:active {
   opacity: 0.3;
 }
 
-.author__link--text:hover,
-.author__link--text:focus {
+.main-footer__author-link--text:hover,
+.main-footer__author-link--text:focus {
   opacity: 0.5;
 }
 
-.author__link--text:active {
+.main-footer__author-link--text:active {
   opacity: 0.3;
 }

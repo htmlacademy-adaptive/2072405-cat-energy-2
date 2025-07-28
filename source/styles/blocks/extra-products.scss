@@ -59,7 +59,7 @@
   }
 }
 
-.list__title {
+.extra-products__item-title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -123,8 +123,8 @@
   }
 }
 
-.list__description,
-.list__price {
+.extra-products__item-description,
+.extra-products__item-price {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -141,13 +141,13 @@
   }
 }
 
-.list__description {
+.extra-products__item-description {
   @media (min-width: $desktop) {
     text-align: left;
   }
 }
 
-.list__link {
+.extra-products__item-link {
   display: block;
   padding: 10px 109px;
   font-family: "Oswald", sans-serif;
@@ -175,16 +175,16 @@
   }
 }
 
-.list__link:hover {
+.extra-products__item-link:hover {
   background-color: $basic_green-2;
 }
 
-.list__link:active {
+.extra-products__item-link:active {
   background-color: $basic_green-2;
   opacity: 0.3;
 }
 
-.gift {
+.extra-products__gift {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -222,7 +222,7 @@
   }
 }
 
-.gift-description {
+.extra-products__gift-description {
   position: relative;
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -242,7 +242,7 @@
   }
 }
 
-.gift-description::before {
+.extra-products__gift-description::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -267,7 +267,7 @@
   }
 }
 
-.list__price {
+.extra-products__item-price {
   @media (min-width: $tablet) {
     margin-left: 49px;
   }
