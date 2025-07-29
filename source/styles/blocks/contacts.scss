@@ -10,10 +10,8 @@
   align-items: center;
   padding-top: 26px;
   padding-bottom: 26px;
-  gap: 20px;
 
   @media (min-width: $tablet) {
-    gap: 0;
     justify-content: space-between;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -32,12 +30,14 @@
 }
 
 .contacts-lead {
+  display: block;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $special_black;
   margin: 0;
+  width: 140px;
 
   @media (min-width: $tablet) {
     font-size: 20px;
@@ -58,6 +58,7 @@
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;
+  width: 140px;
 
   @media (min-width: $tablet) {
     font-size: 16px;
@@ -86,6 +87,10 @@
   height: 362px;
   overflow: hidden;
   border-radius: 8px;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
 
   iframe {
     position: absolute;

@@ -20,7 +20,7 @@
   padding: 0;
 
   @media (min-width: $tablet) {
-    margin-bottom: 70px;
+    margin-bottom: 66px;
   }
 
   @media (min-width: $desktop) {
@@ -32,14 +32,14 @@
 .extra-products__title {
   display: block;
   margin: 0;
-  padding: 25px 0 36px;
+  padding: 25px 0 28px;
 
   @media (min-width: $tablet) {
-    padding: 74px 40px 80px;
+    padding: 74px 40px 75px;
   }
 
   @media (min-width: $desktop) {
-    padding: 71px 0 80px;
+    padding: 71px 0 75px;
   }
 }
 
@@ -47,15 +47,18 @@
   content: "";
   position: absolute;
   width: 100vw;
-  top: 43px;
-  transform: translateY(-50%);
+  top: 32px;
   left: 266px;
   height: 2px;
   background-color: $basic_green;
 
   @media (min-width: $tablet) {
     left: 0;
-    top: 96px;
+    top: 85px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 90px;
   }
 }
 
@@ -66,11 +69,13 @@
   line-height: 1;
   text-transform: uppercase;
   color: $special_dark-grey-2;
-  margin: 0 0 13px;
+  padding: 13px 0;
+  margin: 0;
 
   @media (min-width: $tablet) {
     grid-column: 1;
     grid-row: 1;
+    padding: 0;
     margin: 0 0 25px;
     font-size: 20px;
   }
@@ -84,7 +89,6 @@
 
 .extra-products__item {
   border-top: 1px solid $special_grey;
-  padding-top: 13px;
 
   @media (min-width: $tablet) {
     display: grid;
@@ -193,31 +197,39 @@
   overflow: hidden;
   background:
     linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, $basic_green 100%),
-    url("../../images/catalog-background-mobile@1x.png") center top no-repeat,
+    url("../../images/catalog-background-mobile@1x.jpg") center top no-repeat,
     linear-gradient(to bottom, $basic_grey 63%, $basic_green 100%);
   background-size:
     100% 100%,
-    320px auto,
+    contain,
     100% 100%;
   background-repeat: no-repeat;
   background-position: top center, top center, top center;
+  margin-top: 35px;
 
   @media (min-width: $tablet) {
     background:
       linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, $basic_green 100%),
-      url("../../images/catalog-background-tablet@1x.png") center top no-repeat,
+      url("../../images/catalog-background-tablet@2x.jpg"),
       linear-gradient(to bottom, $basic_grey 63%, $basic_green 100%);
     background-size:
       100% 100%,
       100% 100%,
       100% 100%;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop) {
     background:
       linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, $basic_green 100%),
-      url("../../images/catalog-background-mobile@1x.png") center top no-repeat,
+      url("../../images/catalog-background-mobile@1x.jpg") center top no-repeat,
       linear-gradient(to bottom, $basic_grey 63%, $basic_green 100%);
+    background-size:
+      100% 100%,
+      cover,
+      100% 100%;
+    background-repeat: no-repeat;
+    background-position: top center, center left, top center;
     margin: 0;
   }
 }
@@ -230,6 +242,7 @@
   color: $white;
   text-align: center;
   padding: 187px 0 43px;
+  margin: 0;
 
   @media (min-width: $tablet) {
     padding: 71px 125px 69px 421px;

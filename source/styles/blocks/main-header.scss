@@ -10,13 +10,14 @@
 
   @media (min-width: $tablet) {
     padding-top: 25px;
+    padding-bottom: 0;
     border: none;
-    gap: 0;
-    justify-content: space-between;
+    gap: 94px;
   }
 
   @media (min-width: $desktop) {
     padding-top: 55px;
+    gap: 543px;
     border: none;
   }
 }
@@ -34,10 +35,6 @@
 
 .main-header__logo--text {
   display: block;
-
-  @media (min-width: $tablet) {
-    margin-left: 13px;
-  }
 }
 
 .main-header__logo:hover {
