@@ -3,7 +3,7 @@
   @media (min-width: $desktop) {
     content: "";
     position: absolute;
-    width: 50vw;
+    width: 50%;
     height: 694px;
     top: 0;
     left: 50%;
@@ -13,7 +13,7 @@
       linear-gradient(to bottom, $special_dark-grey 62.92%, $basic_green 100%);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: top center, top left, top center;
+    background-position: top center, top right, top center;
     z-index: 0;
   }
 }
