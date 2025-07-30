@@ -1,0 +1,19 @@
+
+.page__body--cat-bg-image::after {
+  @media (min-width: $desktop) {
+    content: "";
+    position: absolute;
+    width: 50vw;
+    height: 694px;
+    top: 0;
+    left: 50%;
+    background:
+      linear-gradient(to bottom, rgba(#68b738, 0.85) 62.92%, $basic_green 100%),
+      image-set(url("../../images/index-background-desktop@2x.jpg")),
+      linear-gradient(to bottom, $special_dark-grey 62.92%, $basic_green 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center, top left, top center;
+    z-index: 0;
+  }
+}
