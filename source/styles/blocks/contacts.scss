@@ -29,7 +29,7 @@
   }
 }
 
-.contacts-lead {
+.contacts__lead {
   display: block;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -104,6 +104,14 @@
 }
 
 .contacts__map-image {
-  display: block;
+  width: 320px;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1440px;
+  }
 }

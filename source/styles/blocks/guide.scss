@@ -14,7 +14,7 @@
   line-height: 40px;
   font-weight: 400;
   padding: 0;
-  margin: 22px 0 40px;
+  margin: 22px 0 42px;
 
   @media (min-width: $tablet) {
     margin: 45px 0 32px;
@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 71px;
+    margin-top: 76px;
     font-size: 60px;
     line-height: 1;
   }
@@ -33,7 +33,7 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 54px;
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -48,14 +48,15 @@
   }
 
   @media (min-width: $desktop) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 0 68px;
+    display: flex;
+    flex-flow: row wrap;
     margin: 0;
+    gap: 50px;
   }
 }
 
 .guide__item {
+  box-sizing: border-box;
   position: relative;
   margin: 0;
   padding-left: 80px;
@@ -79,9 +80,31 @@
   }
 }
 
+.guide__item--leaf {
+  @media (min-width: $desktop) {
+    width: 230px;
+    margin-right: 44px;
+  }
+}
+
+.guide__item--meal {
+  @media (min-width: $desktop) {
+    width: 248px;
+    margin-right: 22px;
+  }
+}
+
+.guide__item--water {
+  @media (min-width: $desktop) {
+    width: 246px;
+    margin-right: 29px;
+  }
+}
+
 .guide__item--clock {
   @media (min-width: $desktop) {
-    min-width: 250px;
+    width: 250px;
+    padding-right: 0;
   }
 }
 
@@ -143,4 +166,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 26px 31px;
+}
+
+.guide__item-break {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: inherit;
+  }
 }

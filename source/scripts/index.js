@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('.main-nav');
+  if (nav.classList.contains('main-nav--nojs')) {
+    nav.classList.remove('main-nav--nojs');
+  }
   const openBtn = nav.querySelector('.main-nav__toggle:not(.main-nav__toggle--close)');
   const closeBtn = nav.querySelector('.main-nav__toggle--close');
   const menu = nav.querySelector('.main-nav__list');

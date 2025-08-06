@@ -1,0 +1,9 @@
+.programs-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop) {
+    flex-flow: row wrap;
+    gap: 80px;
+  }
+}
