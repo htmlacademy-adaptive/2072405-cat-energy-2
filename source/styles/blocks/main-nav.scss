@@ -1,16 +1,36 @@
+.main-nav--nojs {
+  .main-nav__list {
+    display: block;
+    position: static;
+
+    @media (min-width: $tablet) {
+      display: flex;
+    }
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
 .main-nav__list--close {
   display: none;
+}
+
+.main-nav {
+  width: 100%;
 }
 
 .main-nav__list {
   position: absolute;
   left: 0;
-  top: 66px;
+  top: 65px;
   list-style-type: none;
   background-color: $white;
   margin: 0;
   padding: 0;
   z-index: 3;
+  width: 100%;
 
   @media (min-width: $tablet) {
     position: relative;
@@ -18,6 +38,7 @@
     display: flex;
     flex-flow: row wrap;
     gap: 33px;
+    width: auto;
   }
 
   @media (min-width: $desktop) {
@@ -27,14 +48,16 @@
 }
 
 .main-nav__item {
-  min-width: 320px;
   text-align: center;
+  box-sizing: border-box;
+  height: 66px;
   padding: 22px 0 24px;
   border-top: 1px solid $special_grey-3;
   z-index: 2;
   cursor: pointer;
 
   @media (min-width: $tablet) {
+    height: auto;
     border: none;
     min-width: 0;
     padding: 0;
@@ -54,7 +77,6 @@
     display: block;
     font-size: 18px;
     line-height: 24px;
-    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop) {
@@ -80,9 +102,11 @@
 }
 
 .main-nav__toggle {
-  position: relative;
+  position: absolute;
+  right: 20px;
+  top: 22px;
   width: 24px;
-  height: 17px;
+  height: 18px;
   border: none;
   background: none;
   cursor: pointer;
@@ -141,9 +165,31 @@
 }
 
 .main-nav__link--current {
+  position: relative;
   cursor: default;
+}
+
+.main-nav__link--current::after {
+  content: "";
+  position: absolute;
 
   @media (min-width: $tablet) {
-    border-bottom: 2px solid $basic_green;
+    top: 32px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $basic_green;
+  }
+}
+
+.main-nav__link--current-index::after {
+  @media (min-width: 1440px) {
+    background-color: $white;
+  }
+}
+
+.main-nav__link--white {
+  @media (min-width: $desktop) {
+    color: $white;
   }
 }
