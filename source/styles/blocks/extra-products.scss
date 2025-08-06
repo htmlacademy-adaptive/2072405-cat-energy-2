@@ -95,6 +95,7 @@
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
     padding: 26px 38px 28px;
+    border: 1px solid $special_grey;
   }
 
   @media (min-width: $desktop) {
@@ -102,6 +103,8 @@
     align-items: center;
     padding: 15px 0;
     gap: 0;
+    border: none;
+    border-top: 1px solid $special_grey;
   }
 }
 
